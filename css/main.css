@@ -55,12 +55,6 @@
     font-style: italic
 }
 
-@font-face {
-    font-family: BitPotion;
-    src: url(../fonts/BitPotion/BitPotionExt.ttf);
-    font-style: normal
-}
-
 *,
 :after,
 :before {
