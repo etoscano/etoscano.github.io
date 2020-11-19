@@ -120,3 +120,10 @@ html {
     color: white;
 }
 
+.banner{
+    margin-top: 55px;
+}
+
+a{
+    text-decoration: none!important;
+}
