@@ -157,9 +157,9 @@ a{
 .perspective-container {
     overflow: hidden; /* so we dont get any undesired scrolling in the browser window */
     width: 50vw;
-    height: 20vw;
+    height: 25vw;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .bottom-background {
@@ -167,25 +167,25 @@ a{
     background-image: linear-gradient(to right, #b827fc 1px, #2c90fc 1px, #b8fd33 1px, #fec837 1px, #fd1892 1px, transparent 1px), linear-gradient(to bottom, green 1px, transparent 1px);
     width: 100%;
     /*height: 50vh;*/
-    height: 180px;
+    height: 20vw;
     bottom: 0;
-    margin-top: 5vw;
+    /*margin-top: 10vw;*/
     transform: perspective(400px) rotateX(70deg) scale(2);
 }
 .sun{
     border-radius: 100%;
     overflow: hidden;
-    width: 15vw;
-    height: 15vw;
+    width: 25vw;
+    height: 25vw;
     position: absolute;
-    left: 43vw;
+    left: 37vw;
     /*background-color: #36006c;*/
-    --sun-top: #f0c;
-    --sun-bottom: #80f;
+    --sun-top: #ff00cc;
+    --sun-bottom: #ffd200;
     background-color: var(--sun-top);
     background-image: linear-gradient(to bottom, transparent, var(--sun-bottom));
     /* Lines */
-    --line1-start: 2%;
+    --line1-start: 0%;
     --line1-end: 5;
     --line2-start: 7%;
     --line2-end: 5;
@@ -220,4 +220,16 @@ a{
             );
 }
 
+/*    */
+
+.orange{
+    color: darkorange;
+}
+
+.mountains{
+    position: relative;
+    width: 50vw;
+    /*margin-top: -10vw;*/
+    top: 8vw;
+}
 
