@@ -20,7 +20,7 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-wide w3-padding w3-card">
+  <div class="w3-bar w3-black w3-wide w3-padding w3-card rainbow-line">
     <a href="#home" class="w3-bar-item w3-button"><b>ELEONORA</b> <b>TOSCANO</b></a>
     <!-- Float links to the right. Hide them on small screens -->
 <!--    <div class="w3-right w3-hide-small">-->
@@ -31,16 +31,20 @@
   </div>
 </div>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <div class="w3-center">
-  <img class="w3-image banner" src="images/logoW.png" alt="Banner" width="300" height="300">
-<!--  <div class="w3-display-middle w3-margin-top w3-center">-->
-<!--    <h1 class="w3-xxlarge w3-text-white w3-padding w3-black w3-opacity-min"><span class="w3-hide-small"><b>ELEONORA</b><br><b>TOSCANO</b></span></h1>-->
+<!--HEADER-->
+<!--&lt;!&ndash; Header &ndash;&gt;-->
+<!--<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">-->
+<!--  <div class="w3-center">-->
+<!--  <img class="w3-image banner" src="images/logoW.png" alt="Banner" width="300" height="300">-->
+<!--&lt;!&ndash;  <div class="w3-display-middle w3-margin-top w3-center">&ndash;&gt;-->
+<!--&lt;!&ndash;    <h1 class="w3-xxlarge w3-text-white w3-padding w3-black w3-opacity-min"><span class="w3-hide-small"><b>ELEONORA</b><br><b>TOSCANO</b></span></h1>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
 <!--  </div>-->
-  </div>
-</header>
-
+<!--</header>-->
+<div class="perspective-container">
+  <div class="sun"></div>
+  <div class="bottom-background"></div>
+</div>
 
 
 <!-- Page content -->
@@ -59,22 +63,34 @@
 <!--    </p>-->
 
     <!-- Project Section -->
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+    <h3 class="w3-border-bottom rainbow-line w3-padding-16">Projects</h3>
   </div>
     <div class="w3-row-padding">
 
     <div class="w3-col l3 m6 w3-margin-bottom">
       <a href="gea-plus-plus.html">
-        <img src="images/GEAProject.jpg" alt="GEA" class="project-img" style="width:100%">
+        <div class="container">
+        <img src="images/GEAProject.png" alt="GEA" class="project-img" style="width:100%">
+        <div class="bottom-left w3-left-align"><h3>Unity <br> Kinect <br> Smart Room</h3></div>
+<!--        <div class="top-left w3-left-align">Top Left</div>-->
+<!--        <div class="top-right w3-left-align">Top Right</div>-->
+<!--        <div class="bottom-right w3-left-align">Bottom Right</div>-->
+<!--        <div class="centered w3-left-align">Centered</div>-->
+        </div>
+
         <h3>Smart Room games</h3>
         <!--      <p class="w3-opacity-min">Architect</p>-->
         <p>Development of various Smart Room games in Unity using projectors and a Kinect</p>
+
       </a>
     </div>
 
     <div class="w3-col l3 m6 w3-margin-bottom">
       <a href="magic-the-rendering.html">
-      <img src="images/MagicProject.jpg" alt="magic" class="project-img" style="width:100%">
+        <div class="container">
+      <img src="images/MagicProject.png" alt="magic" class="project-img" style="width:100%">
+        <div class="bottom-left w3-left-align"><h3>Unity <br> Vuforia <br> AR</h3></div>
+        </div>
       <h3>Magic: The Rendering</h3>
 <!--      <p class="w3-opacity-min">2020</p>-->
       <p>Unity implementation of an AR application to enhance the experience of trading <i>Magic: The Gathering</i> cards</p>
@@ -83,7 +99,10 @@
 
     <div class="w3-col l3 m6 w3-margin-bottom">
       <a href="dynamic-website.html">
-        <img src="images/WebsiteProject.jpg" alt="website" class="project-img" style="width:100%">
+        <div class="container">
+        <img src="images/WebsiteProject.png" alt="website" class="project-img" style="width:100%">
+          <div class="bottom-left w3-left-align"><h3>HTML + CSS <br> JavaScript<br>SQL</h3></div>
+        </div>
         <h3>Dynamic website</h3>
         <!--      <p class="w3-opacity-min">Architect</p>-->
         <p>HTML, CSS and SQL implementation of a dynamic website from IDM specifications</p>
@@ -91,7 +110,10 @@
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <a href="annotations.html">
-      <img src="images/AnnotationProject.jpg" alt="annotations" class="project-img" style="width:100%">
+        <div class="container">
+      <img src="images/AnnotationProject.png" alt="annotations" class="project-img" style="width:100%">
+        <div class="bottom-left w3-left-align"><h3>Java <br> Swing</h3></div>
+    </div>
       <h3>Annotations on photo</h3>
 <!--      <p class="w3-opacity-min">Architect</p>-->
       <p>Java swing implementation of a photo browser with drawing functionalities</p>
@@ -197,7 +219,7 @@
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <h3 class="w3-border-bottom rainbow-line w3-padding-16">Contact</h3>
     <p>Lets get in touch and talk about your next project.</p>
 
     <a href="https://www.linkedin.com/in/eleonora-toscano/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
