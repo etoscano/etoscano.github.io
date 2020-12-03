@@ -144,8 +144,9 @@ a{
 }
 
 .container:hover{
-    transform: scale(0.95);
-    transition: .3s ease-in-out;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
 }
 
 .rainbow-line{
@@ -157,57 +158,79 @@ a{
 .perspective-container {
     overflow: hidden; /* so we dont get any undesired scrolling in the browser window */
     width: 50vw;
-    height: 25vw;
+    height: 22vw;
     margin: auto;
     margin-top: 80px;
 }
 
 .bottom-background {
     background-size: 20px 20px;
-    background-image: linear-gradient(to right, #b827fc 1px, #2c90fc 1px, #b8fd33 1px, #fec837 1px, #fd1892 1px, transparent 1px), linear-gradient(to bottom, green 1px, transparent 1px);
+    background-image: linear-gradient(to right, #7cb9fd 2px, transparent 1px), linear-gradient(to bottom, #319baa 2px, transparent 1px);
     width: 100%;
     /*height: 50vh;*/
-    height: 20vw;
+    height: 18vw;
     bottom: 0;
     /*margin-top: 10vw;*/
-    transform: perspective(400px) rotateX(70deg) scale(2);
+    transform: perspective(200px) rotateX(70deg) scale(2);
+
+
+animation: myanim 0.5s infinite;
 }
+@keyframes myanim {
+    0% {
+        background-size: 20px 20px;
+    }
+    25% {
+        background-size: 20px 21px;
+    }
+    50% {
+        background-size: 20px 22px;
+    }
+    75% {
+        background-size: 20px 23px;
+    }
+    100% {
+        background-size: 20px 24px;
+    }
+}
+
 .sun{
     border-radius: 100%;
     overflow: hidden;
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     position: absolute;
-    left: 37vw;
+    left: 40vw;
     /*background-color: #36006c;*/
     --sun-top: #ff00cc;
     --sun-bottom: #ffd200;
     background-color: var(--sun-top);
     background-image: linear-gradient(to bottom, transparent, var(--sun-bottom));
+
+    -webkit-box-shadow: 0px 0px 50px 15px #ECACFF;
+    box-shadow: 0px 0px 50px 15px #ECACFF;
+
     /* Lines */
-    --line1-start: 0%;
-    --line1-end: 5;
-    --line2-start: 7%;
-    --line2-end: 5;
-    --line3-start: 14%;
-    --line3-end: 4;
-    --line4-start: 20%;
-    --line4-end: 4;
-    --line5-start: 25%;
+    --line2-start: 1%;
+    --line2-end: 3;
+    --line3-start: 0%;
+    --line3-end: 3;
+    --line4-start: 8%;
+    --line4-end: 3;
+    --line5-start: 16%;
     --line5-end: 3;
-    --line6-start: 30%;
+    --line6-start: 23%;
     --line6-end: 2;
-    --line7-start: 35%;
+    --line7-start: 29%;
     --line7-end: 2;
-    --line8-start: 40%;
+    --line8-start: 35%;
     --line8-end: 1;
-    --line9-start: 45%;
+    --line9-start: 40%;
     --line9-end: 0.5;
 
     -webkit-mask-image:
             linear-gradient(to top,
             #000 0%,
-            #000 var(--line1-start), transparent var(--line1-start), transparent calc(var(--line1-start) + (var(--line1-end) * 1%)), #000 calc(var(--line1-start) + (var(--line1-end) * 1%)),
             #000 var(--line2-start), transparent var(--line2-start), transparent calc(var(--line2-start) + (var(--line2-end) * 1%)), #000 calc(var(--line2-start) + (var(--line2-end) * 1%)),
             #000 var(--line3-start), transparent var(--line3-start), transparent calc(var(--line3-start) + (var(--line3-end) * 1%)), #000 calc(var(--line3-start) + (var(--line3-end) * 1%)),
             #000 var(--line4-start), transparent var(--line4-start), transparent calc(var(--line4-start) + (var(--line4-end) * 1%)), #000 calc(var(--line4-start) + (var(--line4-end) * 1%)),
@@ -216,7 +239,7 @@ a{
             #000 var(--line7-start), transparent var(--line7-start), transparent calc(var(--line7-start) + (var(--line7-end) * 1%)), #000 calc(var(--line7-start) + (var(--line7-end) * 1%)),
             #000 var(--line8-start), transparent var(--line8-start), transparent calc(var(--line8-start) + (var(--line8-end) * 1%)), #000 calc(var(--line8-start) + (var(--line8-end) * 1%)),
             #000 var(--line9-start), transparent var(--line9-start), transparent calc(var(--line9-start) + (var(--line9-end) * 1%)), #000 calc(var(--line9-start) + (var(--line9-end) * 1%)),
-            #000 100%
+            #000 50%
             );
 }
 
@@ -228,8 +251,15 @@ a{
 
 .mountains{
     position: relative;
-    width: 50vw;
+    width: 30vw;
     /*margin-top: -10vw;*/
-    top: 8vw;
+    top: 7vw;
+    display: block;
+    margin: auto;
 }
+
+.stars{
+
+}
+
 
