@@ -156,8 +156,8 @@ a{
 /* HEADER*/
 .perspective-container {
     overflow: hidden; /* so we dont get any undesired scrolling in the browser window */
-    width: 800px;
-    height: 250px;
+    width: 50vw;
+    height: 20vw;
     margin: auto;
     margin-top: 100px;
 }
@@ -167,19 +167,57 @@ a{
     background-image: linear-gradient(to right, #b827fc 1px, #2c90fc 1px, #b8fd33 1px, #fec837 1px, #fd1892 1px, transparent 1px), linear-gradient(to bottom, green 1px, transparent 1px);
     width: 100%;
     /*height: 50vh;*/
-    height: 150px;
+    height: 180px;
     bottom: 0;
-    margin-top: 100px;
+    margin-top: 5vw;
     transform: perspective(400px) rotateX(70deg) scale(2);
 }
 .sun{
     border-radius: 100%;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 15vw;
+    height: 15vw;
     position: absolute;
-    /*left: 40%;*/
-    background-color: #36006c;
+    left: 43vw;
+    /*background-color: #36006c;*/
+    --sun-top: #f0c;
+    --sun-bottom: #80f;
+    background-color: var(--sun-top);
+    background-image: linear-gradient(to bottom, transparent, var(--sun-bottom));
+    /* Lines */
+    --line1-start: 2%;
+    --line1-end: 5;
+    --line2-start: 7%;
+    --line2-end: 5;
+    --line3-start: 14%;
+    --line3-end: 4;
+    --line4-start: 20%;
+    --line4-end: 4;
+    --line5-start: 25%;
+    --line5-end: 3;
+    --line6-start: 30%;
+    --line6-end: 2;
+    --line7-start: 35%;
+    --line7-end: 2;
+    --line8-start: 40%;
+    --line8-end: 1;
+    --line9-start: 45%;
+    --line9-end: 0.5;
+
+    -webkit-mask-image:
+            linear-gradient(to top,
+            #000 0%,
+            #000 var(--line1-start), transparent var(--line1-start), transparent calc(var(--line1-start) + (var(--line1-end) * 1%)), #000 calc(var(--line1-start) + (var(--line1-end) * 1%)),
+            #000 var(--line2-start), transparent var(--line2-start), transparent calc(var(--line2-start) + (var(--line2-end) * 1%)), #000 calc(var(--line2-start) + (var(--line2-end) * 1%)),
+            #000 var(--line3-start), transparent var(--line3-start), transparent calc(var(--line3-start) + (var(--line3-end) * 1%)), #000 calc(var(--line3-start) + (var(--line3-end) * 1%)),
+            #000 var(--line4-start), transparent var(--line4-start), transparent calc(var(--line4-start) + (var(--line4-end) * 1%)), #000 calc(var(--line4-start) + (var(--line4-end) * 1%)),
+            #000 var(--line5-start), transparent var(--line5-start), transparent calc(var(--line5-start) + (var(--line5-end) * 1%)), #000 calc(var(--line5-start) + (var(--line5-end) * 1%)),
+            #000 var(--line6-start), transparent var(--line6-start), transparent calc(var(--line6-start) + (var(--line6-end) * 1%)), #000 calc(var(--line6-start) + (var(--line6-end) * 1%)),
+            #000 var(--line7-start), transparent var(--line7-start), transparent calc(var(--line7-start) + (var(--line7-end) * 1%)), #000 calc(var(--line7-start) + (var(--line7-end) * 1%)),
+            #000 var(--line8-start), transparent var(--line8-start), transparent calc(var(--line8-start) + (var(--line8-end) * 1%)), #000 calc(var(--line8-start) + (var(--line8-end) * 1%)),
+            #000 var(--line9-start), transparent var(--line9-start), transparent calc(var(--line9-start) + (var(--line9-end) * 1%)), #000 calc(var(--line9-start) + (var(--line9-end) * 1%)),
+            #000 100%
+            );
 }
 
 
