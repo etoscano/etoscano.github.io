@@ -174,8 +174,9 @@ a{
 /* HEADER*/
 .perspective-container {
     overflow: hidden; /* so we dont get any undesired scrolling in the browser window */
-    width: 50vw;
-    height: 22vw;
+    width: 70vw;
+    /*height: 22vw;*/
+    /*width: 100%;*/
     margin: auto;
     margin-top: 80px;
 }
@@ -183,15 +184,15 @@ a{
 .bottom-background {
     background-size: 20px 20px;
     background-image: linear-gradient(to right, #7cb9fd 2px, transparent 1px), linear-gradient(to bottom, #319baa 2px, transparent 1px);
-    width: 100%;
+    width: 60%;
     /*height: 50vh;*/
     height: 18vw;
     bottom: 0;
     /*margin-top: 10vw;*/
-    transform: perspective(200px) rotateX(70deg) scale(2);
+    transform: perspective(100px) rotateX(65deg) scale(1);
 
 
-animation: myanim 0.5s infinite;
+animation: myanim 0.7s infinite;
 }
 @keyframes myanim {
     0% {
@@ -217,7 +218,7 @@ animation: myanim 0.5s infinite;
     width: 20vw;
     height: 20vw;
     position: absolute;
-    left: 40vw;
+    left: 25vw;
     /*background-color: #36006c;*/
     --sun-top: #ff00cc;
     --sun-bottom: #ffd200;
@@ -270,9 +271,8 @@ animation: myanim 0.5s infinite;
     position: relative;
     width: 30vw;
     /*margin-top: -10vw;*/
-    top: 7vw;
-    display: block;
-    margin: auto;
+    top: 8vw;
+    left: 7vw;
 }
 
 .stars{
@@ -313,5 +313,14 @@ animation: myanim 0.5s infinite;
         opacity: 1;
     }
 }
+
+#car{
+    top: -12vw;
+}
+#img-car{
+
+    width: 20vw;
+}
+
 
 
