@@ -1,5 +1,12 @@
 
 @font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-Regular-slnt=0.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
     font-family: Raleway;
     src: url(../fonts/Raleway/Raleway-Light.ttf);
     font-weight: 300;
@@ -78,12 +85,18 @@ html {
     padding: 0;
     background-color: #000;
     color: #acacac;
-    font-family: Raleway, "Source Sans Pro", Helvetica, Arial, sans-serif;
-    line-height: 1.5
+    /*font-family: Raleway, "Source Sans Pro", Helvetica, Arial, sans-serif;*/
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+
+}
+
 .w3-button:hover{
     background-color: inherit!important;
-    color: #ffc700 !important;
+    color: #B8FD33!important;
 }
 .padding-leftright{
     padding-left: 1rem;
@@ -103,16 +116,20 @@ html {
 
 .fa:hover {
     opacity: 0.7;
+    background: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    color: black;
 }
 
 .fa-github {
     background: #3B5998;
     color: white;
+    border-radius: 100%;
 }
 
 .fa-linkedin {
     background: #007bb5;
     color: white;
+    border-radius: 100%;
 }
 
 .fa-android {
@@ -260,6 +277,41 @@ animation: myanim 0.5s infinite;
 
 .stars{
 
+}
+
+.slide-in-bottom {
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 
