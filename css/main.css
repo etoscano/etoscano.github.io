@@ -83,7 +83,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #1D1D1D;
     color: #acacac;
     /*font-family: Raleway, "Source Sans Pro", Helvetica, Arial, sans-serif;*/
     line-height: 1.5;
@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', sans-serif;
 
 }
+
 
 .w3-button:hover{
     background-color: inherit!important;
@@ -187,11 +188,12 @@ a{
     width: 60%;
     /*height: 50vh;*/
     height: 18vw;
-    bottom: 0;
+    /*bottom: 10vw;*/
+
+    /*top: -8vw;*/
     /*margin-top: 10vw;*/
-    transform: perspective(100px) rotateX(65deg) scale(1);
-
-
+    transform: perspective(150px) rotateX(70deg) scale(1);
+    z-index: -1;
 animation: myanim 0.7s infinite;
 }
 @keyframes myanim {
@@ -271,7 +273,7 @@ animation: myanim 0.7s infinite;
     position: relative;
     width: 30vw;
     /*margin-top: -10vw;*/
-    top: 8vw;
+    top: 17vw;
     left: 7vw;
 }
 
@@ -315,11 +317,17 @@ animation: myanim 0.7s infinite;
 }
 
 #car{
-    top: -12vw;
+    top: 15vw;
+    z-index: 20;
+    position: relative;
 }
 #img-car{
 
     width: 20vw;
+}
+
+.top-bar{
+    z-index: 30!important
 }
 
 
