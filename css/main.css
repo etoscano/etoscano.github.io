@@ -117,20 +117,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .fa:hover {
     opacity: 0.7;
-    background: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-    color: black;
 }
 
 .fa-github {
-    background: #3B5998;
+    background: #000000;
     color: white;
-    border-radius: 100%;
+    /*border-radius: 100%;*/
 }
 
 .fa-linkedin {
-    background: #007bb5;
+    background: #000;
     color: white;
-    border-radius: 100%;
+    /*border-radius: 100%;*/
 }
 
 .fa-android {
@@ -153,6 +151,9 @@ a{
     text-align: center;
     color: white;
 }
+.container:hover{
+    opacity: 0.7;
+}
 
 /* Bottom left text */
 .bottom-left {
@@ -161,7 +162,14 @@ a{
     left: 16px;
 }
 
-.container:hover{
+.container{
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
+
+.rainbow-round{
+    border-radius: 100%;
     border: 1px solid transparent;
     border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
     border-image-slice: 1;
@@ -259,13 +267,14 @@ animation: myanim 1s infinite;
     position: absolute;
     left: 25vw;
     /*background-color: #36006c;*/
-    --sun-top: #ff00cc;
-    --sun-bottom: #ffd200;
-    background-color: var(--sun-top);
-    background-image: linear-gradient(to bottom, transparent, var(--sun-bottom));
+    background: rgb(253, 0, 201);
+    background: linear-gradient(0deg, rgb(253, 0, 235) 24%, rgba(255,235,0,1) 100%);
 
-    -webkit-box-shadow: 0px 0px 50px 15px #ECACFF;
-    box-shadow: 0px 0px 50px 15px #ECACFF;
+    /*-webkit-box-shadow: 0px 0px 50px 15px #ECACFF;*/
+    /*box-shadow: 0px 0px 50px 15px #ECACFF;*/
+
+    /*-webkit-box-shadow: 0px 0px 10px -5px #fffdfe;*/
+    /*box-shadow: 0px 0px 10px -5px #fff8f8;*/
 
     /* Lines */
     --line2-start: 1%;
@@ -298,6 +307,9 @@ animation: myanim 1s infinite;
             #000 var(--line9-start), transparent var(--line9-start), transparent calc(var(--line9-start) + (var(--line9-end) * 1%)), #000 calc(var(--line9-start) + (var(--line9-end) * 1%)),
             #000 50%
             );
+
+    /*background: rgb(0,0,0);*/
+    /*background: radial-gradient(circle, rgba(0,0,0,1) 5%, rgba(255,247,235,1) 6%, rgba(204,221,227,1) 7%, rgba(244,235,204,1) 9%, rgba(171,162,255,1) 15%, rgba(55,255,229,1) 21%, rgba(195,255,129,1) 24%, rgba(0,189,12,1) 27%, rgba(0,0,0,1) 28%, rgba(0,0,0,1) 40%);*/
 }
 
 /*    */
