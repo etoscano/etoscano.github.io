@@ -196,6 +196,7 @@ a{
 
 .electrical-bg{
     background-color: #fff;
+    background-color: #fff;
 }
 
 .bottom-background {
@@ -211,23 +212,28 @@ a{
     /*margin-top: 10vw;*/
     transform: perspective(150px) rotateX(70deg) scale(1);
     z-index: -1;
-animation: myanim 1s infinite;
+animation: myanim 0.7s infinite;
 }
 @keyframes myanim {
     0% {
+        background-position: 0 0px;
         background-size: 30% 100px;
     }
     25% {
-        background-size: 30% 125px;
+        background-position: 0 25px;
+        background-size: 30% 100px;
     }
     50% {
-        background-size: 30% 150px;
+        background-position: 0 50px;
+        background-size: 30% 100px;
     }
     75% {
-        background-size: 30% 175px;
+        background-position: 0 75px;
+        background-size: 30% 100px;
     }
     100% {
-        background-size: 30% 200px;
+        background-position: 0 100px;
+        background-size: 30% 100px;
     }
 }
 
