@@ -152,7 +152,10 @@ a{
     color: white;
 }
 .container:hover{
-    opacity: 0.7;
+    /*opacity: 0.7;*/
+    border: 1px solid white;
+    border-image: linear-gradient(to right, #efceff 0%, #c7e2ff 25%, #e7ffba 50%, #ffecb8 75%, #ffc4e3 100%);
+    border-image-slice: 1;
 }
 
 /* Bottom left text */
@@ -189,6 +192,10 @@ a{
     margin: auto;
     margin-top: 80px;
     /*background-color: #fff;*/
+}
+
+.electrical-bg{
+    background-color: #fff;
 }
 
 .bottom-background {
