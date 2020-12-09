@@ -83,14 +83,14 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background-color: #1D1D1D;
-    color: #acacac;
+    background-color: #1D1D1D!important;
+    color: #acacac!important;
     /*font-family: Raleway, "Source Sans Pro", Helvetica, Arial, sans-serif;*/
     line-height: 1.5;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
 
 }
 
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     text-decoration: none;
     margin-top: 5px;
-    margin-right: 2px;
+    margin-right: 8px;
 }
 
 .fa:hover {
@@ -183,6 +183,16 @@ a{
     border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
     border-image-slice: 1;
 }
+.btn.send-button{
+    background-color: black;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
 /* HEADER*/
 .perspective-container {
     overflow: hidden; /* so we dont get any undesired scrolling in the browser window */
@@ -402,4 +412,28 @@ animation: myanim 0.7s infinite;
     fill: #302a6a;
 }
 
+.myImg{
+    width: 30%;
+    margin-top: 20px;
+}
 
+.formHolder{
+    width: 50vw;
+    padding: 10px;
+    margin: auto;
+}
+
+.contact-me-text{
+    width: 50vw;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Inter', sans-serif !important;
+
+}
+
+.contact-me-button{
+    padding: 10px;
+    width: 20vw;
+    margin: auto;
+    background-color: black;
+}
