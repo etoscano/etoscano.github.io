@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .w3-button:hover{
     background-color: inherit!important;
-    color: #B8FD33!important;
+    color: #8dbffd !important;
 }
 .padding-leftright{
     padding-left: 1rem;
@@ -436,4 +436,16 @@ animation: myanim 0.7s infinite;
     width: 20vw;
     margin: auto;
     background-color: black;
+}
+
+.about-cv{
+    border:  1px solid black;
+    padding: 5px;
+}
+
+.about-active{
+    color: darkorange;
+}
+.contact-active{
+    color: #ff5891;
 }
