@@ -456,3 +456,8 @@ p.education-where{
     margin-top: 5px;
     color: #474747;
 }
+
+.margin-topbottom{
+    margin-top: 30px!important;
+    margin-bottom: 30px!important;
+}
