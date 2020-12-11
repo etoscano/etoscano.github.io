@@ -198,8 +198,8 @@ a {
 }
 
 .electrical-bg {
-    background-color: #fff;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    /*background-color: #000000;*/
 }
 
 .bottom-background {
@@ -436,7 +436,7 @@ a {
 }
 
 .about-cv {
-    border: 1px solid black;
+    border: 1px solid #ffffff;
     padding: 5px;
 }
 
@@ -454,7 +454,7 @@ p.education{
 
 p.education-where{
     margin-top: 5px;
-    color: #474747;
+    color: #cdcdcd;
 }
 
 .margin-topbottom{
