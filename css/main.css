@@ -539,3 +539,21 @@ p.education-where{
 .w-100{
     width: 100vw!important;
 }
+h2.new-h2{
+    font-size: 1.2rem;
+}
+
+h3{
+    font-size: 1.2rem!important;
+}
+
+h1.new-h1{
+    margin-top: 50px;
+    font-size: 1.2rem;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+p.new-p-home{
+    margin-top: 80px;
+}
