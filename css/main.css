@@ -174,7 +174,7 @@ a {
 }
 
 .rainbow-round {
-    border-radius: 100%;
+    /*border-radius: 100%;*/
     border: 1px solid transparent;
     border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
     border-image-slice: 1;
@@ -432,6 +432,7 @@ a {
     padding: 10px;
     width: 20vw;
     margin: auto;
+    margin-bottom: 30px;
     background-color: black;
 }
 
@@ -524,6 +525,10 @@ p.education-where{
 
     .contact-me-text {
         width: 80vw;
+    }
+
+    .perspective-container{
+        display: none;
     }
 }
 
