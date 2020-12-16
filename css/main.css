@@ -215,7 +215,79 @@ a {
     /*margin-top: 10vw;*/
     transform: perspective(150px) rotateX(70deg) scale(1);
     z-index: -1;
+    -webkit-animation: myanim 0.7s infinite;
+    -moz-animation: myanim 0.7s infinite;
+    -o-animation: myanim 0.7s infinite;
     animation: myanim 0.7s infinite;
+}
+
+@-webkit-keyframes myanim {
+    0% {
+        background-position: 0 0px;
+        background-size: 30% 100px;
+    }
+    25% {
+        background-position: 0 25px;
+        background-size: 30% 100px;
+    }
+    50% {
+        background-position: 0 50px;
+        background-size: 30% 100px;
+    }
+    75% {
+        background-position: 0 75px;
+        background-size: 30% 100px;
+    }
+    100% {
+        background-position: 0 100px;
+        background-size: 30% 100px;
+    }
+}
+
+@-moz-keyframes myanim {
+    0% {
+        background-position: 0 0px;
+        background-size: 30% 100px;
+    }
+    25% {
+        background-position: 0 25px;
+        background-size: 30% 100px;
+    }
+    50% {
+        background-position: 0 50px;
+        background-size: 30% 100px;
+    }
+    75% {
+        background-position: 0 75px;
+        background-size: 30% 100px;
+    }
+    100% {
+        background-position: 0 100px;
+        background-size: 30% 100px;
+    }
+}
+
+@-o-keyframes myanim {
+    0% {
+        background-position: 0 0px;
+        background-size: 30% 100px;
+    }
+    25% {
+        background-position: 0 25px;
+        background-size: 30% 100px;
+    }
+    50% {
+        background-position: 0 50px;
+        background-size: 30% 100px;
+    }
+    75% {
+        background-position: 0 75px;
+        background-size: 30% 100px;
+    }
+    100% {
+        background-position: 0 100px;
+        background-size: 30% 100px;
+    }
 }
 
 @keyframes myanim {
@@ -244,7 +316,64 @@ a {
 .night-bottom-bg {
     background-size: 20px 20px;
     background-image: linear-gradient(to right, #7cb9fd 2px, transparent 1px), linear-gradient(to bottom, #319baa 2px, transparent 1px);
+    -webkit-animation: myanim2 0.7s infinite;
+    -moz-animation: myanim2 0.7s infinite;
+    -o-animation: myanim2 0.7s infinite;
     animation: myanim2 0.7s infinite;
+}
+
+@-webkit-keyframes myanim2 {
+    0% {
+        background-size: 20px 20px;
+    }
+    25% {
+        background-size: 20px 21px;
+    }
+    50% {
+        background-size: 20px 22px;
+    }
+    75% {
+        background-size: 20px 23px;
+    }
+    100% {
+        background-size: 20px 24px;
+    }
+}
+
+@-moz-keyframes myanim2 {
+    0% {
+        background-size: 20px 20px;
+    }
+    25% {
+        background-size: 20px 21px;
+    }
+    50% {
+        background-size: 20px 22px;
+    }
+    75% {
+        background-size: 20px 23px;
+    }
+    100% {
+        background-size: 20px 24px;
+    }
+}
+
+@-o-keyframes myanim2 {
+    0% {
+        background-size: 20px 20px;
+    }
+    25% {
+        background-size: 20px 21px;
+    }
+    50% {
+        background-size: 20px 22px;
+    }
+    75% {
+        background-size: 20px 23px;
+    }
+    100% {
+        background-size: 20px 24px;
+    }
 }
 
 @keyframes myanim2 {
