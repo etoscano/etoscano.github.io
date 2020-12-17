@@ -107,9 +107,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ICONS */
 .fa {
-    padding: 20px;
+    padding: 14px;
     font-size: 30px !important;
-    width: 70px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     margin-top: 5px;
@@ -592,12 +592,6 @@ p.education-where{
     margin-bottom: 40px!important;
 }
 
-@media screen and (max-width: 992px) {
-    .padding-leftright {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
 
 .mainMenu{
     background: linear-gradient(230deg, #272727 1.55%, #000000 95.8%);
@@ -641,11 +635,16 @@ p.education-where{
 }
 
 @media screen and (max-width: 993px) {
+    .padding-leftright {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .pages {
         display: none!important;
     }
     .title{
-        padding: 20px!important;
+        padding: 14px!important;
     }
 
     .contact-me-button {
@@ -659,10 +658,16 @@ p.education-where{
     .perspective-container{
         display: none;
     }
+    .w3-top .w3-padding{
+        padding: 0!important;
+    }
+    h1.new-h1 {
+        margin-top: 80px!important;
+    }
 }
 
 .fa.menu-button{
-    font-size: 22px !important;
+    font-size: 22px!important
 }
 
 .w-100{
@@ -690,4 +695,7 @@ p.new-p-home{
 }
 p.new-p-home2{
     margin-bottom: 40px;
+}
+.w3-wide2 {
+    letter-spacing: 2px;
 }
