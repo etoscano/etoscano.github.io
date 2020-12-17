@@ -664,6 +664,9 @@ p.education-where{
     h1.new-h1 {
         margin-top: 80px!important;
     }
+    .w3-wide2 {
+        letter-spacing: 0px!important;
+    }
 }
 
 .fa.menu-button{
@@ -698,4 +701,14 @@ p.new-p-home2{
 }
 .w3-wide2 {
     letter-spacing: 2px;
+}
+
+.perspective-container2 {
+    overflow: hidden;
+    width: 70vw;
+    /* height: 22vw; */
+    /* width: 100%; */
+    margin: auto;
+    margin-top: 80px;
+    /* background-color: #fff; */
 }
