@@ -61,6 +61,14 @@
     </div>
 </nav>
 
+
+<div id="loader-wrapper">
+    <div id="loader">
+
+        <b class="text-pop-up-right">ET</b>
+    </div>
+</div>
+
 <div class="w3-content w3-padding" style="max-width:1564px; min-height: 700px" id="home">
     <div class="padding-leftright w3-center" style="margin-top: 80px">
         <h2 class="w3-border-bottom rainbow-line w3-padding-16 new-h2">CONTACT ME</h2>
@@ -126,6 +134,17 @@
             $('.mainMenu').removeClass('act');
         });
     }
+</script>
+
+
+<script>
+    $(document).ready(function() {
+
+        setTimeout(function(){
+            $('body').addClass('loaded');
+        }, 1700);
+
+    });
 </script>
 
 </body>

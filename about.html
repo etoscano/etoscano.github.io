@@ -60,6 +60,15 @@
     </div>
 </nav>
 
+
+
+<div id="loader-wrapper">
+    <div id="loader">
+
+        <b class="text-pop-up-right">ET</b>
+    </div>
+</div>
+
 <!--HEADER-->
 <!--&lt;!&ndash; Header &ndash;&gt;-->
 <!--<header class="perspective-container2 electrical-bg" onclick="myFunction()">-->
@@ -145,5 +154,17 @@
         });
     }
 </script>
+
+
+<script>
+    $(document).ready(function() {
+
+        setTimeout(function(){
+            $('body').addClass('loaded');
+        }, 1700);
+
+    });
+</script>
+
 </body>
 </html>
