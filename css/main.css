@@ -698,6 +698,9 @@ p.education-where{
         padding-left: 0rem;
         padding-right: 0rem;
     }
+    .projectsSection{
+        max-width: 400px!important;
+    }
 }
 
 .w3-bar{
