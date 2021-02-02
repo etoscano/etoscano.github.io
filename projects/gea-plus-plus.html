@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<div class="page">
 
 <!-- Navbar (sit on top) -->
 <nav class="w3-top">
@@ -50,7 +51,12 @@
         </div></a>
     </div>
 </nav>
+<div id="loader-wrapper">
+    <div id="loader">
 
+        <b class="text-pop-up-right">ET</b>
+    </div>
+</div>
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
     <div class="w3-center">
@@ -177,6 +183,36 @@
 
     Eleonora Toscano © 2021
 </footer>
+
+</div>
+<script>
+    // $(document).ready(function () {
+    //
+    //     setTimeout(function () {
+    //         $('body').addClass('loaded');
+    //     }, 1700);
+    //
+    // });
+
+    function onReady(callback) {
+        var intervalId = window.setInterval(function() {
+            if (document.getElementsByTagName('body')[0] !== undefined) {
+                window.clearInterval(intervalId);
+                callback.call(this);
+            }
+        }, 1000);
+    }
+
+    function setVisible() {
+        $('.page').addClass('loaded');
+    }
+
+    onReady(function() {
+        setVisible();
+        console.log("ready");
+    });
+
+</script>
 
 <!-- MENU-->
 <script>

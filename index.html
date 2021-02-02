@@ -22,6 +22,9 @@ MSc Human-Computer Interaction and Design at Politecnico di Milano | Paris-Sacla
 
 <body>
 
+
+<div class="page">
+
 <!-- Navbar (sit on top) -->
 <nav class="w3-top  top-bar">
     <div class="w3-bar w3-black w3-wide w3-padding w3-card rainbow-line">
@@ -63,6 +66,15 @@ MSc Human-Computer Interaction and Design at Politecnico di Milano | Paris-Sacla
     </div>
 </nav>
 
+
+
+    <div id="loader-wrapper">
+        <div id="loader">
+
+            <b class="text-pop-up-right">ET</b>
+        </div>
+    </div>
+
 <!--HEADER-->
 <!--&lt;!&ndash; Header &ndash;&gt;-->
 <header class="perspective-container" onclick="myFunction()">
@@ -89,13 +101,6 @@ MSc Human-Computer Interaction and Design at Politecnico di Milano | Paris-Sacla
 
 </header>
 
-
-<div id="loader-wrapper">
-    <div id="loader">
-
-        <b class="text-pop-up-right">ET</b>
-    </div>
-</div>
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
@@ -317,6 +322,8 @@ MSc Human-Computer Interaction and Design at Politecnico di Milano | Paris-Sacla
     Eleonora Toscano © 2021
 </footer>
 
+</div>
+
 <script>
     var car = document.getElementById("car");
     var imgcar = document.getElementById("img-car");
@@ -460,13 +467,32 @@ MSc Human-Computer Interaction and Design at Politecnico di Milano | Paris-Sacla
 </script>
 
 <script>
-    $(document).ready(function () {
+    // $(document).ready(function () {
+    //
+    //     setTimeout(function () {
+    //         $('body').addClass('loaded');
+    //     }, 1700);
+    //
+    // });
 
-        setTimeout(function () {
-            $('body').addClass('loaded');
-        }, 1700);
+    function onReady(callback) {
+        var intervalId = window.setInterval(function() {
+            if (document.getElementsByTagName('body')[0] !== undefined) {
+                window.clearInterval(intervalId);
+                callback.call(this);
+            }
+        }, 1000);
+    }
 
+    function setVisible() {
+        $('.page').addClass('loaded');
+    }
+
+    onReady(function() {
+        setVisible();
+        console.log("ready");
     });
+
 </script>
 
 <script>

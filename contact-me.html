@@ -19,6 +19,7 @@
 </head>
 
 <body>
+<div class="page">
 
 <!-- Navbar (sit on top) -->
 <nav class="w3-top  top-bar">
@@ -119,6 +120,8 @@
 
     Eleonora Toscano © 2021
 </footer>
+</div>
+
 <!-- MENU-->
 <script>
     function menu() {
@@ -137,15 +140,34 @@
 </script>
 
 
-<script>
-    $(document).ready(function() {
+    <script>
+        // $(document).ready(function () {
+        //
+        //     setTimeout(function () {
+        //         $('body').addClass('loaded');
+        //     }, 1700);
+        //
+        // });
 
-        setTimeout(function(){
-            $('body').addClass('loaded');
-        }, 1700);
+        function onReady(callback) {
+            var intervalId = window.setInterval(function() {
+                if (document.getElementsByTagName('body')[0] !== undefined) {
+                    window.clearInterval(intervalId);
+                    callback.call(this);
+                }
+            }, 1000);
+        }
 
-    });
-</script>
+        function setVisible() {
+            $('.page').addClass('loaded');
+        }
+
+        onReady(function() {
+            setVisible();
+            console.log("ready");
+        });
+
+    </script>
 
 </body>
 </html>
