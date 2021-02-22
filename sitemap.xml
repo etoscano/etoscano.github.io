@@ -9,67 +9,82 @@
 
 <url>
   <loc>https://etoscano.github.io/</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/about.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/contact-me.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/projects/gea-plus-plus.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/projects/magic-the-rendering.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://etoscano.github.io/projects/remote-meeting-bot.html</loc>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/projects/dynamic-website.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://etoscano.github.io/projects/copy-cat.html</loc>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/projects/user-experience-excellence.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/projects/website-from-figma-concept.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/projects/dash-python-application.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/projects/annotations.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/projects/java-board-game.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/index.html</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://etoscano.github.io/CV-Eleonora-Toscano.pdf</loc>
-  <lastmod>2020-12-17T11:36:06+00:00</lastmod>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://etoscano.github.io/documents/EleonoraToscano-RemoteMeetingBot.pdf</loc>
+  <lastmod>2021-02-22T16:12:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
