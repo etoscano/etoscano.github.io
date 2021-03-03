@@ -477,6 +477,8 @@ a {
     color: darkorange;
 }
 
+
+
 .mountains {
     position: relative;
     width: 30vw;
@@ -976,3 +978,8 @@ footer{
     opacity: 1;
 }
 /**/
+
+a .white{
+    color: white!important;
+    font-weight: normal;
+}
