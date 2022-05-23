@@ -155,13 +155,13 @@ body{
 
 
 
-//---------
 
 /* --------------------------- highschool */
 .panel {
         z-index: 1;
         position: absolute;
-        bottom: 40vh;
+        // bottom: 40vh;
+        top: 6vh;
         left: calc(50vw - 18.9vh - 4px);
         height: 54vh;
         width: 18.9vh;
@@ -368,7 +368,6 @@ body{
 }
 .book:nth-of-type(4) {
         animation-delay: 1s;
-        height: calc($book-height * 0.7);
         margin-left: 0.7938vh;
         border-color: #d08b00;
         border-left-color: #92918f;
@@ -400,7 +399,8 @@ body{
 }
 .inner {
         position: absolute;
-        bottom: 40vh;
+        // bottom: 40vh;
+        top: 6vh;
         left: calc(50vw - 18.9vh - 4px);
         height: 54vh;
         width: 18.9vh;
@@ -436,6 +436,7 @@ body{
         pointer-events: none;
         width: max-content;
         display: none;
+        color: white;
 }
 .front:before {
         content: "★";
