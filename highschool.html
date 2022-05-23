@@ -1,0 +1,80 @@
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Highschool</title>
+    <meta name="description" content="A new Yeogurt application">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+
+  </head>
+  <body>
+    <!--[if lt IE 11]>
+    <p class="browsehappy">
+      You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    </p>
+    <![endif]-->
+
+    
+
+<main class="main">
+    <h1 class="main__title"> hello</h1>
+
+<div class="click swing panel">
+  <div class="front">
+  </div>
+  <div class="back">
+    <div class="pad">
+    </div>
+  </div>
+</div>
+
+<div class="inner">
+  <div class="stack">
+    <a class="book" href="/documents/Heartstopper_Vol_1_by_Alice_Oseman_-_Heartstopper_Vol_1.pdf" download><span class="booktext">Heartstopper Volume 1</span></a>  
+    <a class="book" href="/documents/Heartstopper_Vol_2_by_Alice_Oseman_-_Heartstopper_Vol_2.pdf" download><span class="booktext">Heartstopper Volume 2</span></a>  
+    <a class="book" href="/documents/Heartstopper_Vol_3_by_Alice_Oseman_-_Heartstopper_Vol_3.pdf" download><span class="booktext">Heartstopper Volume 3</span></a>  
+    <a class="book" href="#" disabled></a>  
+    <a class="book" href="#" disabled></a>  
+  </div>
+</div>
+
+</main>
+
+<script>
+    
+
+    $(".front").click(function(){
+        $(".inner").toggleClass("inner--open");
+        $(".click").toggleClass("flip");
+    });
+
+    $(".back").click(function(){
+        $(".inner").toggleClass("inner--open");
+        $(".click").toggleClass("flip");
+    });
+
+        $(".book").click(function(){
+        console.log("You clicked on a book!");
+    });
+</script>
+
+
+
+    
+  </body>
+</html>
