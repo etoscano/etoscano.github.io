@@ -23,8 +23,8 @@
     z-index: 900;
     width: inherit;
     height: inherit;
-    /* background: #008800; */
-    background: url(/images/door.jpg);
+background: #008800;
+//     background: url(/images/door.jpg);
   background-size: contain;
   
     text-align: center;
@@ -140,7 +140,7 @@ background: url(/images/door.jpg);
   }
 
 
-body{
+  .highschool__body{
     background: url(/images/locker.jpg);
   background-size: cover;
 }
