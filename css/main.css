@@ -1124,8 +1124,8 @@ background: url(/images/door.jpg);
 
 
 body{
-    background: url(/images/locker.jpg);
-  background-size: cover;
+    /* background: url(/images/locker.jpg);
+  background-size: cover; */
 }
 
 .main{
