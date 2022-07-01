@@ -1,0 +1,62 @@
+// Import Global
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+// @import "./animations.scss";
+// @import "./typography_extends.scss";
+
+// Import Modules
+// @import "../../modules/Row/Row.module.scss";
+// @import "../../Components/Column/Column.module.scss";
+// @import "../../modules/Header/Header.module.scss";
+@import "../modules/Button/Button.module.scss";
+// @import "../../Components/Loader/Loader.module.scss";
+// @import "../../Components/ContactForm/ContactForm.module.scss";
+// @import "../../Components/Timeline/Timeline.module.scss";
+// @import "../../Components/Testimonials/Testimonials.module.scss";
+// @import "../../Components/Line/Line.module.scss";
+// @import "../../Components/GroupImgs/GroupImgs.module.scss";
+
+
+// Import Pages
+@import "../pages/Home/Home.scss";
+// @import "../../Pages/About/About.scss";
+// @import "../../Pages/Projects/Projects.scss";
+// @import "../../Pages/Contact/Contact.scss";
+// @import "../../Pages/About/About.scss";
+// @import "../../Pages/ErrorPage/ErrorPage.scss";
+
+
+body{
+    // background-image: linear-gradient(to right, $color-light-2 35%, $color-white 35%);
+    background-color: $color-white;
+}
+
+// // REMOVE SCROLLBAR
+// body::-webkit-scrollbar {
+//     display: none;
+// }
+// body{
+//         -ms-overflow-style: none;  /* IE and Edge */
+//         scrollbar-width: none;  /* Firefox */
+// }
+
+.app{
+    max-width: 1440px;
+    margin: auto;
+    // background-image: linear-gradient(to right, $color-light-2 35%, $color-white 35%);
+
+
+    // @include bpmax($m) {
+    //     background-image: none;
+    // }
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
