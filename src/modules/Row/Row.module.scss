@@ -1,0 +1,14 @@
+
+
+.row{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @include bpmax($m) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
