@@ -2,8 +2,7 @@
 @import "./reset.scss";
 @import "./variables.scss";
 @import "./mixins.scss";
-// @import "./animations.scss";
-// @import "./typography_extends.scss";
+@import "./typography.scss";
 
 // Import Modules
 @import "../modules/Row/Row.module.scss";
@@ -28,8 +27,8 @@
 
 
 body{
-    // background-image: linear-gradient(to right, $color-light-2 35%, $color-white 35%);
     background-color: $color-white;
+    font-family: $font;
 }
 
 // // REMOVE SCROLLBAR
@@ -44,12 +43,6 @@ body{
 .app{
     max-width: 1440px;
     margin: auto;
-    // background-image: linear-gradient(to right, $color-light-2 35%, $color-white 35%);
-
-
-    // @include bpmax($m) {
-    //     background-image: none;
-    // }
 }
 
 .sr-only {

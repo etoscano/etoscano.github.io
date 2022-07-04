@@ -1,10 +1,15 @@
+$color-black: #000000;
 
+
+
+
+// -------------
 $color-light-1: #fff1d6;
 $color-light-2: #ffebc2;
 $color-light-3: #f0ede7;
 
 $color-white: #fdfbf6;
-$color-black: #0f0f0f;
+
 
 $color-link: #9c5e01;
 
@@ -24,7 +29,4 @@ $padding-small: 16px;
 
 $text-base-size: 16px;
 
-$serif: 'Reckless Neue', 'Times New Roman', Times, serif;
-$sansSerif: 'Founders Grotesk', Arial, sans-serif;
-$sansSerifCond: 'Founders Grotesk Condensed', Arial, sans-serif;
-$pathFont: '../fonts/';
+$font: 'Inter', Arial, sans-serif;

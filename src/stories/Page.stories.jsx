@@ -4,7 +4,7 @@ import { within, userEvent } from '@storybook/testing-library';
 import { Home } from '../pages/Home/Home.jsx';
 
 export default {
-  title: 'Example/Home',
+  title: 'Pages/Home',
   component: Home,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

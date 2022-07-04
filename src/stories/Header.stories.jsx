@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Header } from '../modules/Header/Header.jsx';
+import Header from '../modules/Header/Header.jsx';
 
 export default {
-  title: 'Example/Header',
+  title: 'Modules/Header',
   component: Header,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
@@ -13,12 +13,15 @@ export default {
 
 const Template = (args) => <Header {...args} />;
 
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {
-    name: 'Jane Doe',
-  },
-};
+// export const LoggedIn = Template.bind({});
+// LoggedIn.args = {
+//   user: {
+//     name: 'Jane Doe',
+//   },
+// };
 
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
+// export const LoggedOut = Template.bind({});
+// LoggedOut.args = {};
+
+export const Default = Template.bind({});
+Default.args = {};

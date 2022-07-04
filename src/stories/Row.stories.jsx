@@ -19,9 +19,9 @@ export const Wrap = Template.bind({});
 Wrap.margins = true
 Wrap.args = {
   children: <>
-    <Column margins={Wrap.margins} size={6}> jbkjdwbja</Column>
-    <Column margins={Wrap.margins} size={2}> jb</Column>
-    <Column margins={Wrap.margins} size={9}> jbkjdwbja</Column>
+    <Column margins={Wrap.margins} size={6}  bgColor={true} > jbkjdwbja</Column>
+    <Column margins={Wrap.margins} size={2}  bgColor={true}> jb</Column>
+    <Column margins={Wrap.margins} size={9}  bgColor={true}> jbkjdwbja</Column>
   </>,
   extraClass: "row--myClass"
 };
@@ -29,7 +29,7 @@ Wrap.args = {
 export const FourEight = Template.bind({});
 FourEight.args = {
   children: <>
-  <Column size={4}> jbkjdwbja</Column>
-  <Column size={8}> jb</Column>
+  <Column size={4}  bgColor={true}> jbkjdwbja</Column>
+  <Column size={8}  bgColor={true}> jb</Column>
 </>
 };

@@ -14,6 +14,6 @@ Default.args = {
 };
 
 export const Color = Template.bind({});
-Color.bgColor = true
 Color.args = {
+  bgColor : true
 };
