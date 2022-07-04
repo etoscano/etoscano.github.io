@@ -17,7 +17,6 @@
 }
 
 .header__item{
-  padding: 16px 48px;
   position: relative;
 
   &:not(:last-child):after {
@@ -36,4 +35,27 @@
 .header__row{
   height: 128px;
   align-items: center;
+}
+
+.header__link{
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(18px);
+  line-height: rem(24px);
+
+  padding: 16px 48px;
+  width: 100%;
+
+  &--active:after {
+    content: "";
+    background: $color-gray;
+    border-radius: 100px;
+    width: 77px;
+    height: 8px;
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
