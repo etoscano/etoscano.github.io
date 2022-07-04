@@ -36,13 +36,22 @@ return (
           <nav className="footer__outerNav">
             <ul className="footer__outerList">     
                 <li className={`footer__outerItem `}>
-                  <Link className={`footer__outerLink `}  to="https://github.com/etoscano/"  >Github</Link>
+                  <Link className={`footer__outerLink `}  to="https://github.com/etoscano/"  >
+                  <img className="footer__socialIcon" src="./icon-github.svg" alt="Github logo"></img>                   
+                    Github
+                    </Link>
                 </li>            
                 <li className={`footer__outerItem `}>
-                  <Link className={`footer__outerLink `} to="https://www.linkedin.com/in/eleonora-toscano/" > LinkedIn </Link>
+                  <Link className={`footer__outerLink `} to="https://www.linkedin.com/in/eleonora-toscano/" >
+                  <img className="footer__socialIcon" src="./icon-linkedin.svg" alt="Linkedin logo"></img>                   
+                    LinkedIn
+                  </Link>
                 </li>
                 <li className={`footer__outerItem `}>
-                  <Link className={`footer__outerLink  `} to="mailto:toscano.eleonora97@gmail.com" > Email </Link>
+                  <Link className={`footer__outerLink  `} to="mailto:toscano.eleonora97@gmail.com" >
+                  <img className="footer__socialIcon" src="./icon-email.svg" alt="Envelope"></img> 
+                    Email
+                  </Link>
                 </li>               
             </ul>        
           </nav>

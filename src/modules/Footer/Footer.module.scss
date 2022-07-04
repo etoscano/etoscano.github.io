@@ -41,7 +41,9 @@
 .footer__outerLink{
     position: absolute;
     bottom: -8px;
-    left: 104px;
+    left: 52px;
+    display: flex;
+    align-items: center;
 }
 
 .footer__innerNavTitle{
@@ -62,4 +64,13 @@
 
 .footer__item{
     padding: 4px 0;
+}
+
+.footer__paragraph{
+    max-width: 50ch;
+}
+
+.footer__socialIcon{
+    width: 48px;
+    padding-right: 16px;
 }
