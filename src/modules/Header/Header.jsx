@@ -19,8 +19,13 @@ return (
     <header className="header">
       <Row extraClass={"header__row"}>
         <Column size={1}  ></Column>
+        
         <Column size={1}  >
-          <img className="header__logo" src="./ET.svg" alt="Eleonora Toscano logo"></img>
+
+          <Link className={`header__logoLink `}  to="/" onClick={() => setSelected('home')} aria-label={"Go to homepage"}>
+            <img className="header__logo" src="./ET.svg" alt="Eleonora Toscano logo"></img>
+          </Link>
+
         </Column>
         
         <Column size={9}  >
