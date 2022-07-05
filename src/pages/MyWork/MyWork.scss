@@ -3,9 +3,18 @@
 .mywork__main{
     padding-top: 104px; // header
     padding-bottom: 96px;
+    min-height: 100vh;
+}
+
+.mywork__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .mywork__title{
+    padding-top: 32px;
     font-family: $font;
     font-style: normal;
     font-weight: 700;
@@ -27,13 +36,12 @@
 }
 
 .mywork__innerContainer{
-    background-color: gray;
     position: relative;
 }
 
 .mywork__projectTitle{
     background-color: #4E5E57;
-    padding-right: 16px;
+    padding-right: 32px;
     text-align: right;
     position: absolute;
     width: 100%;
