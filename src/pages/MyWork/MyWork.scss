@@ -1,0 +1,71 @@
+
+
+.mywork__main{
+    padding-top: 104px; // header
+    padding-bottom: 96px;
+}
+
+.mywork__title{
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(28px);
+    line-height: rem(36px);
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+              
+.mywork__project{
+    display: flex;
+    flex-direction: column;
+}
+
+.mywork__container{
+    border: 2px solid $color-black;
+    padding: 16px;
+}
+
+.mywork__innerContainer{
+    background-color: gray;
+    position: relative;
+}
+
+.mywork__projectTitle{
+    background-color: #4E5E57;
+    padding-right: 16px;
+    text-align: right;
+    position: absolute;
+    width: 100%;
+    color: $color-white;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(22px);
+    line-height: rem(48px);
+    margin-bottom: 40px;
+}
+
+.mywork__img{
+    min-height: 100px;
+
+}
+
+.mywork__year{
+
+}
+
+.mywork__info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.mywork__techs{
+    display: flex;
+}
+
+
+.mywork__tech{
+    margin-left: 16px;
+}

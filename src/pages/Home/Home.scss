@@ -2,7 +2,7 @@
 
 
 .home__main{
-    padding-top: 128px; // header
+    padding-top: 104px; // header
     padding-bottom: 96px;
     min-height: 100vh;
     display: flex;
@@ -14,8 +14,8 @@
     font-family: $font;
     font-style: normal;
     font-weight: 700;
-    font-size: rem(48px);
-    line-height: rem(58px);
+    font-size: rem(40px);
+    line-height: rem(48px);
     margin-bottom: 40px;
 }
 
@@ -24,17 +24,21 @@
     font-family: $font;
     font-style: normal;
     font-weight: 400;
-    font-size: rem(24px);
-    line-height: rem(29px);
+    font-size: rem(18px);
+    line-height: rem(20px);
     margin-bottom: 72px;
+}
+
+.home__row{
+    width: 100%;
 }
 
 .home__link{
     font-family: $font;
     font-style: normal;
     font-weight: 700;
-    font-size: rem(20px);
-    line-height: rem(24px);
+    font-size: rem(18px);
+    line-height: rem(20px);
     color: $color-white;
     padding: 16px 64px 16px 24px;
 

@@ -5,6 +5,7 @@
   font-family: $font;
   position: absolute;
   width: 100%;
+  background-color: $color-white;
 }
 
 
@@ -35,7 +36,7 @@
 }
 
 .header__row{
-  height: 128px;
+  height: 104px;
   align-items: center;
 }
 
