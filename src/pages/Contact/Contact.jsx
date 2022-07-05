@@ -12,37 +12,56 @@ function Contact({  }) {
 
      <main className='contact__main'>
 
+     <img className="contact__bg" src="./contact.png" alt=""></img>
+
+
         <Row extraClass="contact__row">
             <Column size={3}  ></Column>
             
-            <Column size={6}  >
-              <h1 className='contact__title'>Contact</h1>
-              <p className='contact__paragraph'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper netus nam consequat 
-              </p>
+            <Column size={6} extraClass="contact__wrapper" >
+              <div className='contact__innerWrapper'>
 
-              <nav className="contact__outerNav">
-                <ul className="contact__outerList">     
-                    <li className={`contact__outerItem `}>
-                      <a className={`contact__outerLink `}  href="https://github.com/etoscano/"  >
-                      <img className="contact__socialIcon" src="./icon-github.svg" alt=""></img>                   
-                        Github
+                <h1 className='contact__title'>Contact</h1>
+                <p className='contact__paragraph'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper netus nam consequat 
+                </p>
+
+                <div className="contact__outerNav">
+                  <ul className="contact__outerList">     
+                      <li className={`contact__outerItem `}>
+                        <a className={`contact__outerLink `}  href="https://github.com/etoscano/" aria-label='Github' >
+                        <img className="contact__socialIcon" src="./icon-github.svg" alt=""></img>                   
+                          </a>
+                      </li>            
+                      <li className={`contact__outerItem `}>
+                        <a className={`contact__outerLink `} href="https://www.linkedin.com/in/eleonora-toscano/" aria-label='LinkedIn' >
+                        <img className="contact__socialIcon" src="./icon-linkedin.svg" alt=""></img>                   
                         </a>
-                    </li>            
-                    <li className={`contact__outerItem `}>
-                      <a className={`contact__outerLink `} href="https://www.linkedin.com/in/eleonora-toscano/" >
-                      <img className="contact__socialIcon" src="./icon-linkedin.svg" alt=""></img>                   
-                        LinkedIn
-                      </a>
-                    </li>
-                    <li className={`contact__outerItem `}>
-                      <a className={`contact__outerLink  `} href="mailto:toscano.eleonora97@gmail.com" >
-                      <img className="contact__socialIcon" src="./icon-email.svg" alt=""></img> 
-                        Email
-                      </a>
-                    </li>               
-                </ul>        
-              </nav>
+                      </li>
+                      <li className={`contact__outerItem `}>
+                        <a className={`contact__outerLink  `} href="mailto:toscano.eleonora97@gmail.com" aria-label='Email' >
+                        <img className="contact__socialIcon" src="./icon-email.svg" alt=""></img> 
+                        </a>
+                      </li>               
+                  </ul>        
+                </div>
+
+                <form className='contact__form'>
+                  <label className='contact__label' for="name">Name</label>
+                  <input className='contact__input' type="text" id="name" autoComplete='name'></input>
+
+                  <label className='contact__label' for="email">Email</label>
+                  <input className='contact__input' type="text" id="email"  autoComplete='email'></input>
+
+                  <label className='contact__label' for="message">Message</label>
+                  <textarea className='contact__textarea' type="textarea" id="message" rows="6"></textarea>
+
+                  <button className='contact__button' type="submit">Send message
+                  <img className="contact__icon" src="./chat.svg" alt=""></img>
+                  </button>
+                </form>
+
+              </div>
 
             </Column>
 

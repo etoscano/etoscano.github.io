@@ -91,6 +91,8 @@ return (
       </Row>
 
       <Car></Car>
+
+      <p className='footer__bottomParagraph'>Eleonora Toscano © 2022</p>
     </footer>
 );
     {/* <Routes> */}
