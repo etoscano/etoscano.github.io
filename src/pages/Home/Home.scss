@@ -1,7 +1,13 @@
 
+
+
 .home__main{
-    margin-top: 146px;
-    margin-bottom: 96px;
+    padding-top: 128px; // header
+    padding-bottom: 96px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .home__title{

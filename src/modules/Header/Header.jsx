@@ -6,6 +6,10 @@ import { Button } from '../Button/Button.jsx';
 import Row from '../Row/Row.jsx';
 import Column from '../Column/Column.jsx';
 
+import Home from '../../pages/Home/Home.jsx';
+import Contact from '../../pages/Contact/Contact.jsx';
+import Footer from '../Footer/Footer.jsx';
+
 function Header({  }) {
 
 const [page, setPage] = useState('home');
@@ -53,13 +57,17 @@ return (
     </header>
 
     <Routes>
-      {/* <Route path="/" element={<Home />} /> */}
-      <Route path="/" />
+      <Route path="/" element={<Home />} />
+      {/* <Route path="/" /> */}
       <Route path="/my-work"  />
       <Route path="/about" />
-      <Route path="/contact" />
+      <Route path="/contact" element={<Contact />}/>
       {/* <Route path="*" element={<ErrorPage func={setSelected}/>} /> */}
     </Routes>
+
+
+    <Footer></Footer>
+
   </Router>
 );
 }

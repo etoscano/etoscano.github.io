@@ -16,8 +16,15 @@ function setSelected(name) {
 }
 
 return (
-  <Router>
+  // <Router>
     <footer className="footer">
+
+      <div className='footer__quoteContainer'>
+        <img className="footer__arrow" src="./arrow.svg" alt=""></img>
+        <p className='footer__quote'>It’s not the destination. It's the journey.</p>
+        <img className="footer__arrow" src="./arrow.svg" alt=""></img>
+      </div>
+
       <Row extraClass={"footer__row"}>
         <Column size={1}  ></Column>
         
@@ -85,17 +92,17 @@ return (
 
       <Car></Car>
     </footer>
-
-    <Routes>
+);
+    {/* <Routes> */}
       {/* <Route path="/" element={<Home />} /> */}
-      <Route path="/" />
+      {/* <Route path="/" />
       <Route path="/my-work"  />
       <Route path="/about" />
-      <Route path="/contact" />
+      <Route path="/contact" /> */}
       {/* <Route path="*" element={<ErrorPage func={setSelected}/>} /> */}
-    </Routes>
-  </Router>
-);
+    {/* </Routes> */}
+  {/* </Router> */}
+
 }
 
 // Footer.propTypes = {

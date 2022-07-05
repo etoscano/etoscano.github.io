@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from '../modules/Footer/Footer.jsx';
 
 export default {
@@ -11,7 +11,7 @@ export default {
   },
 };
 
-const Template = (args) => <Footer {...args} />;
+const Template = (args) => <Router><Footer {...args} /></Router>;
 
 // export const LoggedIn = Template.bind({});
 // LoggedIn.args = {

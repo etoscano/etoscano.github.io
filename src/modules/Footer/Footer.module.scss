@@ -1,7 +1,8 @@
 
 .footer{
-    height: 480px;
+    height: 600px;
     position: relative;
+    z-index: -1;
 }
 
 .footer__logoLink{
@@ -81,4 +82,27 @@
 .footer__socialIcon{
     width: 48px;
     padding-right: 16px;
+}
+
+.footer__quote{
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(24px);
+    line-height: rem(29px);
+}
+
+.footer__quoteContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 56px;
+    padding-bottom: 32px;
+}
+
+.footer__arrow{
+    width: 40px;
+    &:nth-of-type(1){
+        transform: rotate(180deg);
+    }
 }
