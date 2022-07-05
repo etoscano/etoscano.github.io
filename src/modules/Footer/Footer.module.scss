@@ -1,5 +1,8 @@
 
-
+.footer{
+    height: 480px;
+    position: relative;
+}
 
 .footer__logoLink{
     height: 113px;
@@ -40,10 +43,11 @@
 
 .footer__outerLink{
     position: absolute;
-    bottom: -8px;
+    bottom: -16px;
     left: 52px;
     display: flex;
     align-items: center;
+    min-width: 12ch;
 }
 
 .footer__innerNavTitle{
