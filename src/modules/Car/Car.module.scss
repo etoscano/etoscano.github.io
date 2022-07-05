@@ -60,18 +60,18 @@
   height: 100%;
   transform: perspective(100px) rotateX(55deg) scale(0.6);
   z-index: -1;
-  -webkit-animation: myanim 2s infinite;
-  -moz-animation: myanim 2s infinite;
-  -o-animation: myanim 2s infinite;
-  animation: myanim 2s infinite;
+  -webkit-animation: myanim 0.7s infinite;
+  -moz-animation: myanim 0.7s infinite;
+  -o-animation: myanim 0.7s infinite;
+  animation: myanim 0.7s infinite;
 
   &.footer__road--night {
     background-size: 20px 20px;
     background-image: linear-gradient(to right, #7cb9fd 2px, transparent 1px), linear-gradient(to bottom, #319baa 2px, transparent 1px);
-    -webkit-animation: myanim2 2s infinite;
-    -moz-animation: myanim2 2s infinite;
-    -o-animation: myanim2 2s infinite;
-    animation: myanim2 2s infinite;
+    -webkit-animation: myanim2 0.7s infinite;
+    -moz-animation: myanim2 0.7s infinite;
+    -o-animation: myanim2 0.7s infinite;
+    animation: myanim2 0.7s infinite;
   }
 }
 

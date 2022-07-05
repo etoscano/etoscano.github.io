@@ -10,8 +10,8 @@ function Car() {
 
   useEffect(() => {
 
-    var container = document.getElementsByClassName("js-footer__container")[0];
-    container.addEventListener('click', myFunction);
+    // var container = document.getElementsByClassName("js-footer__container")[0];
+    // container.addEventListener('click', myFunction);
     document.addEventListener("mousemove", getMouse);
 
     const interval = setInterval(() => {
@@ -120,21 +120,21 @@ function Car() {
   
   }
   
-  function myFunction() {
-    // var sun = document.getElementById("sun");
-    // sun.classList.toggle("sun");
-    // sun.classList.toggle("sun2");
+  // function myFunction() {
+  //   // var sun = document.getElementById("sun");
+  //   // sun.classList.toggle("sun");
+  //   // sun.classList.toggle("sun2");
   
-    var m1 = document.getElementsByClassName("js-footer__mountains__m1")[0];
-    var m2 = document.getElementsByClassName("js-footer__mountains__m2")[0];
-    var m3 = document.getElementsByClassName("js-footer__mountains__m3")[0];
-    m1.classList.toggle("footer__mountains__m1");
-    m2.classList.toggle("footer__mountains__m2");
-    m3.classList.toggle("footer__mountains__m3");
+  //   var m1 = document.getElementsByClassName("js-footer__mountains__m1")[0];
+  //   var m2 = document.getElementsByClassName("js-footer__mountains__m2")[0];
+  //   var m3 = document.getElementsByClassName("js-footer__mountains__m3")[0];
+  //   m1.classList.toggle("footer__mountains__m1");
+  //   m2.classList.toggle("footer__mountains__m2");
+  //   m3.classList.toggle("footer__mountains__m3");
   
-    var bottombg = document.getElementsByClassName("js-footer__bg")[0];
-    bottombg.classList.toggle("footer__road--night");
-  }
+  //   var bottombg = document.getElementsByClassName("js-footer__bg")[0];
+  //   bottombg.classList.toggle("footer__road--night");
+  // }
 
 
 

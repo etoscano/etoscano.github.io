@@ -38,19 +38,19 @@ return (
             <ul className="footer__outerList">     
                 <li className={`footer__outerItem `}>
                   <a className={`footer__outerLink `}  href="https://github.com/etoscano/"  >
-                  <img className="footer__socialIcon" src="./icon-github.svg" alt="Github logo"></img>                   
+                  <img className="footer__socialIcon" src="./icon-github.svg" alt=""></img>                   
                     Github
                     </a>
                 </li>            
                 <li className={`footer__outerItem `}>
                   <a className={`footer__outerLink `} href="https://www.linkedin.com/in/eleonora-toscano/" >
-                  <img className="footer__socialIcon" src="./icon-linkedin.svg" alt="Linkedin logo"></img>                   
+                  <img className="footer__socialIcon" src="./icon-linkedin.svg" alt=""></img>                   
                     LinkedIn
                   </a>
                 </li>
                 <li className={`footer__outerItem `}>
                   <a className={`footer__outerLink  `} href="mailto:toscano.eleonora97@gmail.com" >
-                  <img className="footer__socialIcon" src="./icon-email.svg" alt="Envelope"></img> 
+                  <img className="footer__socialIcon" src="./icon-email.svg" alt=""></img> 
                     Email
                   </a>
                 </li>               
