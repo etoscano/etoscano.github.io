@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
@@ -6,13 +6,7 @@ import Row from '../Row/Row.jsx';
 import Column from '../Column/Column.jsx';
 import Car from "../Car/Car";
 
-function Footer() {
-
-const [page, setPage] = useState('home'); // TODO FIX
-
-function setSelected(name) {
-  setPage(name);
-}
+function Footer({setSelected}) {
 
 return (
   // <Router>

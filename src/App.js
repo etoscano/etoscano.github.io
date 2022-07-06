@@ -1,5 +1,6 @@
 import "./styles/main.scss";
 
+import React , {useState} from 'react';
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import Home from './pages/Home/Home.jsx'
 import Contact from './pages/Contact/Contact.jsx';
@@ -24,13 +25,20 @@ function App() {
   );
 
   function Layout() {
+
+    const [page, setPage] = useState('home');
+
+    function setSelected(name) {
+      setPage(name);
+    }
+
     return (
       <>
-        <Header></Header>
+        <Header page={page} setSelected={setSelected}></Header>
     
         <Outlet />
     
-        <Footer></Footer>
+        <Footer setSelected={setSelected}></Footer>
       </>
     );
   }

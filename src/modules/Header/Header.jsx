@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
@@ -6,13 +6,7 @@ import Row from '../Row/Row.jsx';
 import Column from '../Column/Column.jsx';
 
 
-function Header() {
-
-  const [page, setPage] = useState('home');
-
-  function setSelected(name) {
-    setPage(name);
-  }
+function Header({setSelected, page}) {
 
   return (
     <>

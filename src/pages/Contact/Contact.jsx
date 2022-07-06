@@ -10,7 +10,7 @@ function Contact() {
 
      <main className='contact__main'>
 
-     <img className="contact__bg" src="./contact.png" alt=""></img>
+     <div className="contact__bg" style={{ backgroundImage: "url(/contact.png)" }} alt="">
 
 
         <Row extraClass="contact__row">
@@ -18,31 +18,35 @@ function Contact() {
             
             <Column size={6} extraClass="contact__wrapper" >
               <div className='contact__innerWrapper'>
+                <div className='contact__titleWrapper'>
+                  <h1 className='contact__title'>Contact</h1>
 
-                <h1 className='contact__title'>Contact</h1>
+                  <div className="contact__outerNav">
+                    <ul className="contact__outerList">     
+                        <li className={`contact__outerItem `}>
+                          <a className={`contact__outerLink `}  href="https://github.com/etoscano/" aria-label='Github' >
+                          <img className="contact__socialIcon" src="./icon-github.svg" alt=""></img>                   
+                            </a>
+                        </li>            
+                        <li className={`contact__outerItem `}>
+                          <a className={`contact__outerLink `} href="https://www.linkedin.com/in/eleonora-toscano/" aria-label='LinkedIn' >
+                          <img className="contact__socialIcon" src="./icon-linkedin.svg" alt=""></img>                   
+                          </a>
+                        </li>
+                        <li className={`contact__outerItem `}>
+                          <a className={`contact__outerLink  `} href="mailto:toscano.eleonora97@gmail.com" aria-label='Email' >
+                          <img className="contact__socialIcon" src="./icon-email.svg" alt=""></img> 
+                          </a>
+                        </li>               
+                    </ul>        
+                  </div>
+               </div>
+
                 <p className='contact__paragraph'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper netus nam consequat 
                 </p>
 
-                <div className="contact__outerNav">
-                  <ul className="contact__outerList">     
-                      <li className={`contact__outerItem `}>
-                        <a className={`contact__outerLink `}  href="https://github.com/etoscano/" aria-label='Github' >
-                        <img className="contact__socialIcon" src="./icon-github.svg" alt=""></img>                   
-                          </a>
-                      </li>            
-                      <li className={`contact__outerItem `}>
-                        <a className={`contact__outerLink `} href="https://www.linkedin.com/in/eleonora-toscano/" aria-label='LinkedIn' >
-                        <img className="contact__socialIcon" src="./icon-linkedin.svg" alt=""></img>                   
-                        </a>
-                      </li>
-                      <li className={`contact__outerItem `}>
-                        <a className={`contact__outerLink  `} href="mailto:toscano.eleonora97@gmail.com" aria-label='Email' >
-                        <img className="contact__socialIcon" src="./icon-email.svg" alt=""></img> 
-                        </a>
-                      </li>               
-                  </ul>        
-                </div>
+
 
                 <form className='contact__form'>
                   <label className='contact__label' htmlFor="name">Name</label>
@@ -65,7 +69,7 @@ function Contact() {
 
             <Column size={3}  ></Column>
           </Row>
-
+        </div>
      </main>
 
       </>
