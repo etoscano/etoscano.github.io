@@ -21,15 +21,16 @@ function Header({  }) {
         <Row extraClass={"header__row"}>
           <Column size={1}  ></Column>
           
-          <Column size={1}  >
+          <Column size={3}  >
   
             <Link className={`header__logoLink `}  to="/" onClick={() => setSelected('home')} aria-label={"Go to homepage"}>
               <img className="header__logo" src="./ET.svg" alt="Eleonora Toscano logo"></img>
+              <span className='header__logoText'>Eleonora Toscano</span>
             </Link>
   
           </Column>
           
-          <Column size={9}  >
+          <Column size={7}  >
           
             <nav className="header__nav">
               <ul className="header__list">     
