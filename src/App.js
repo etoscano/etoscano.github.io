@@ -28,17 +28,13 @@ function App() {
 
     const [page, setPage] = useState('home');
 
-    function setSelected(name) {
-      setPage(name);
-    }
-
     return (
       <>
-        <Header page={page} setSelected={setSelected}></Header>
+        <Header page={page} setPage={setPage}></Header>
     
         <Outlet />
     
-        <Footer setSelected={setSelected}></Footer>
+        <Footer setPage={setPage}></Footer>
       </>
     );
   }

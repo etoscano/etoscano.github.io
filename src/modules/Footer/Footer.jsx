@@ -6,7 +6,8 @@ import Row from '../Row/Row.jsx';
 import Column from '../Column/Column.jsx';
 import Car from "../Car/Car";
 
-function Footer({setSelected}) {
+function Footer({setPage}) {
+
 
 return (
   // <Router>
@@ -24,7 +25,7 @@ return (
         <Column size={7}  >
 
            <div className='footer__wrapper'>
-                <Link className={`footer__logoLink `}  to="/" onClick={() => setSelected('home')} aria-label={"Go to homepage"}>
+                <Link className={`footer__logoLink `}  to="/" onClick={() => setPage('home')} aria-label={"Go to homepage"}>
                     <img className="footer__logo" src="./ET.svg" alt="Eleonora Toscano logo"></img>
                 </Link>
 
@@ -65,16 +66,16 @@ return (
         <nav className="footer__nav">
             <ul className="footer__list">     
                 <li className={`footer__item `}>
-                <Link className={`footer__link `}  to="/" onClick={() => setSelected('home')} >Home</Link>
+                <Link className={`footer__link `}  to="/" onClick={() => setPage('home')} >Home</Link>
                 </li>            
                 <li className={`footer__item `}>
-                <Link className={`footer__link `} to="/my-work" onClick={() => setSelected('my-work')}> My Work </Link>
+                <Link className={`footer__link `} to="/my-work" onClick={() => setPage('my-work')}> My Work </Link>
                 </li>
                 <li className={`footer__item `}>
-                <Link className={`footer__link `} to="/about" onClick={() => setSelected('about')}> About </Link>
+                <Link className={`footer__link `} to="/about" onClick={() => setPage('about')}> About </Link>
                 </li>     
                 <li className={`footer__item `}>
-                <Link className={`footer__link `} to="/contact" onClick={() => setSelected('contact')}> Contact </Link>
+                <Link className={`footer__link `} to="/contact" onClick={() => setPage('contact')}> Contact </Link>
                 </li>           
             </ul>        
         </nav>
