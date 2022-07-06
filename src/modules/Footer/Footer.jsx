@@ -46,19 +46,19 @@ return (
                 <li className={`footer__outerItem `}>
                   <a className={`footer__outerLink `}  href="https://github.com/etoscano/"  >
                   <img className="footer__socialIcon" src="./icon-github.svg" alt=""></img>                   
-                    Github
+                    <span className='footer__linkText'>Github</span>
                     </a>
                 </li>            
                 <li className={`footer__outerItem `}>
                   <a className={`footer__outerLink `} href="https://www.linkedin.com/in/eleonora-toscano/" >
                   <img className="footer__socialIcon" src="./icon-linkedin.svg" alt=""></img>                   
-                    LinkedIn
+                    <span className='footer__linkText'>LinkedIn</span>
                   </a>
                 </li>
                 <li className={`footer__outerItem `}>
                   <a className={`footer__outerLink  `} href="mailto:toscano.eleonora97@gmail.com" >
                   <img className="footer__socialIcon" src="./icon-email.svg" alt=""></img> 
-                    Email
+                    <span className='footer__linkText'>Email</span>
                   </a>
                 </li>               
             </ul>        
@@ -72,16 +72,16 @@ return (
         <nav className="footer__nav">
             <ul className="footer__list">     
                 <li className={`footer__item `}>
-                <Link className={`footer__link ${page === "home" ? "footer__link--active" : ""} `}  to="/" onClick={() => setSelected('home')} >Home</Link>
+                <Link className={`footer__link `}  to="/" onClick={() => setSelected('home')} >Home</Link>
                 </li>            
                 <li className={`footer__item `}>
-                <Link className={`footer__link ${ page === "my-work" ? "footer__link--active" : ""} `} to="/my-work" onClick={() => setSelected('my-work')}> My Work </Link>
+                <Link className={`footer__link `} to="/my-work" onClick={() => setSelected('my-work')}> My Work </Link>
                 </li>
                 <li className={`footer__item `}>
-                <Link className={`footer__link ${page ===  "about" ? "footer__link--active" : ""} `} to="/about" onClick={() => setSelected('about')}> About </Link>
+                <Link className={`footer__link `} to="/about" onClick={() => setSelected('about')}> About </Link>
                 </li>     
                 <li className={`footer__item `}>
-                <Link className={`footer__link ${page ===  "contact" ? "footer__link--active" : ""} `} to="/contact" onClick={() => setSelected('contact')}> Contact </Link>
+                <Link className={`footer__link `} to="/contact" onClick={() => setSelected('contact')}> Contact </Link>
                 </li>           
             </ul>        
         </nav>

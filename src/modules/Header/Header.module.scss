@@ -6,6 +6,7 @@
   position: absolute;
   width: 100%;
   background-color: $color-white;
+  z-index: 1;
 }
 
 
@@ -17,18 +18,31 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  &:after {
+    // &:not(:last-child):after {
+      content: "";
+      background: $color-black;
+      width: 2px;
+      height: 42px;
+      position: absolute;
+      right: -1px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
 }
 
 .header__item{
   position: relative;
 
-  &:not(:last-child):after {
+  &:after {
+  // &:not(:last-child):after {
     content: "";
     background: $color-black;
     width: 2px;
     height: 42px;
     position: absolute;
-    right: 0;
+    left: -1px;
     top: 50%;
     transform: translate(0, -50%);
   }
@@ -45,20 +59,53 @@
   font-style: normal;
   font-weight: 600;
   font-size: rem(18px);
-  line-height: rem(24px);
+  line-height: rem(42px);
 
   padding: 16px 48px;
   width: 100%;
 
   &--active:after {
     content: "";
-    background: $color-gray;
-    border-radius: 100px;
-    width: 77px;
-    height: 8px;
+    // background: $color-gray;
+    // border-radius: 100px;
+    // width: 77px;
+    // height: 8px;
+    // position: absolute;
+    // top: 42px;
+    // left: 50%;
+    // transform: translate(-50%, 0);
+    content: '';
+    box-sizing: border-box;
     position: absolute;
-    top: 32px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+    border-top: 2px solid $color-black;
+    // border-left: 2px solid $color-black;
+    // border-right: 2px solid $color-black;
+    border-bottom: 2px  solid $color-black;
   }
+
+  &::before{
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+
+    border-top: 2px solid $color-black;
+    border-bottom: 2px  solid $color-black;
+    transform: scale3d(0,1,1);
+  }
+
+  &:hover::before{
+    transform: scale3d(1,1,1);
+    transition: transform 600ms;
+  }
+
 }

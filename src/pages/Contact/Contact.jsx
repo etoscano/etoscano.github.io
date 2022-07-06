@@ -47,13 +47,13 @@ function Contact({  }) {
                 </div>
 
                 <form className='contact__form'>
-                  <label className='contact__label' for="name">Name</label>
+                  <label className='contact__label' htmlFor="name">Name</label>
                   <input className='contact__input' type="text" id="name" autoComplete='name'></input>
 
-                  <label className='contact__label' for="email">Email</label>
+                  <label className='contact__label' htmlFor="email">Email</label>
                   <input className='contact__input' type="text" id="email"  autoComplete='email'></input>
 
-                  <label className='contact__label' for="message">Message</label>
+                  <label className='contact__label' htmlFor="message">Message</label>
                   <textarea className='contact__textarea' type="textarea" id="message" rows="6"></textarea>
 
                   <button className='contact__button' type="submit">Send message
