@@ -92,19 +92,32 @@
     margin-left: 32px;
 }
 
+
 .contact__button{
     font-family: $font;
     font-style: normal;
     font-weight: 700;
-    font-size: rem(18px);
-    line-height: rem(20px);
-    color: $color-white;
+    font-size: rem(16px);
+    line-height: rem(24px);
+    color: $color-black;
     padding: 16px 64px 16px 24px;
 
-    background: linear-gradient(180deg, #4E5E57 0%, #939599 51.04%, #4E5E57 100%);
-    border-radius: 100px;
     position: relative;
     cursor: pointer;
+
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid;
+    // padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+
+    &:hover {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+    }
+
 }
 
 .contact__icon{

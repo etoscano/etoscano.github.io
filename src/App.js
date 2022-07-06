@@ -1,6 +1,6 @@
 import "./styles/main.scss";
 
-import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import Home from './pages/Home/Home.jsx'
 import Contact from './pages/Contact/Contact.jsx';
 import Footer from './modules/Footer/Footer.jsx';

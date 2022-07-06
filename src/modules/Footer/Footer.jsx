@@ -1,15 +1,14 @@
 import React , {useState} from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import { Button } from '../Button/Button.jsx';
 import Row from '../Row/Row.jsx';
 import Column from '../Column/Column.jsx';
 import Car from "../Car/Car";
 
-function Footer({  }) {
+function Footer() {
 
-const [page, setPage] = useState('home');
+const [page, setPage] = useState('home'); // TODO FIX
 
 function setSelected(name) {
   setPage(name);
@@ -95,16 +94,6 @@ return (
       <p className='footer__bottomParagraph'>Eleonora Toscano © 2022</p>
     </footer>
 );
-    {/* <Routes> */}
-      {/* <Route path="/" element={<Home />} /> */}
-      {/* <Route path="/" />
-      <Route path="/my-work"  />
-      <Route path="/about" />
-      <Route path="/contact" /> */}
-      {/* <Route path="*" element={<ErrorPage func={setSelected}/>} /> */}
-    {/* </Routes> */}
-  {/* </Router> */}
-
 }
 
 // Footer.propTypes = {

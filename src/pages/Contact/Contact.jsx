@@ -1,11 +1,9 @@
-import React , {useState} from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from 'react';
 
 import Row from '../../modules/Row/Row.jsx';
 import Column from '../../modules/Column/Column.jsx';
 
-function Contact({  }) {
-  const [user, setUser] = React.useState();
+function Contact() {
 
   return (
     <>
@@ -57,7 +55,7 @@ function Contact({  }) {
                   <textarea className='contact__textarea' type="textarea" id="message" rows="6"></textarea>
 
                   <button className='contact__button' type="submit">Send message
-                  <img className="contact__icon" src="./chat.svg" alt=""></img>
+                  <img className="contact__icon" src="./send.svg" alt=""></img>
                   </button>
                 </form>
 

@@ -1,13 +1,12 @@
 import React , {useState} from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import { Button } from '../Button/Button.jsx';
 import Row from '../Row/Row.jsx';
 import Column from '../Column/Column.jsx';
 
 
-function Header({  }) {
+function Header() {
 
   const [page, setPage] = useState('home');
 
