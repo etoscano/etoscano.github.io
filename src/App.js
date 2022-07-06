@@ -1,27 +1,39 @@
 import "./styles/main.scss";
 
-import {Home} from './pages/Home/Home.jsx'
+import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-router-dom";
+import Home from './pages/Home/Home.jsx'
+import Contact from './pages/Contact/Contact.jsx';
+import Footer from './modules/Footer/Footer.jsx';
+import MyWork from './pages/MyWork/MyWork.jsx';
+import Header from "./modules/Header/Header";
 
 function App() {
+  
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <Home></Home>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/my-work" element={<MyWork />} />
+          <Route path="/about" />
+          <Route path="/contact" element={<Contact />}/>
+          {/* <Route path="*" element={<ErrorPage func={setSelected}/>} /> */}
+        </Route>
+      </Routes>
+    </Router>
   );
+
+  function Layout() {
+    return (
+      <>
+        <Header></Header>
+    
+        <Outlet />
+    
+        <Footer></Footer>
+      </>
+    );
+  }
 }
 
 export default App;

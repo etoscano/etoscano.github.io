@@ -20,7 +20,7 @@ function Home({  }) {
               <p className='home__paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac placerat rhoncus enim faucibus dui hesf fesffabi.</p>
               {/* <Router> */}
               <Link className='home__link' to="/contact"> Contact me
-              <img className="home__icon" src="./chat.svg" alt=""></img>
+              <img className="home__icon" src="./send.svg" alt=""></img>
               </Link>
                 
               {/* </Router> */}

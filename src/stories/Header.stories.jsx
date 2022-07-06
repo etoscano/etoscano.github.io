@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Header from '../modules/Header/Header.jsx';
 
@@ -11,7 +12,7 @@ export default {
   },
 };
 
-const Template = (args) => <Header {...args} />;
+const Template = (args) => <Router><Header {...args} /></Router>;
 
 // export const LoggedIn = Template.bind({});
 // LoggedIn.args = {

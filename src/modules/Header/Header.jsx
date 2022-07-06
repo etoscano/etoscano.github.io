@@ -6,10 +6,6 @@ import { Button } from '../Button/Button.jsx';
 import Row from '../Row/Row.jsx';
 import Column from '../Column/Column.jsx';
 
-import Home from '../../pages/Home/Home.jsx';
-import Contact from '../../pages/Contact/Contact.jsx';
-import Footer from '../Footer/Footer.jsx';
-import MyWork from '../../pages/MyWork/MyWork.jsx';
 
 function Header({  }) {
 
@@ -19,9 +15,8 @@ function Header({  }) {
     setPage(name);
   }
 
-  function Layout() {
-    return (
-      <>
+  return (
+    <>
       <header className="header">
         <Row extraClass={"header__row"}>
           <Column size={1}  ></Column>
@@ -57,27 +52,9 @@ function Header({  }) {
           <Column size={1}  ></Column>
         </Row>
       </header>
-  
-      <Outlet />
-  
-      <Footer></Footer>
-      </>
-    );
-  }
+    </>
+  );
 
-return (
-  <Router>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="/my-work" element={<MyWork />} />
-        <Route path="/about" />
-        <Route path="/contact" element={<Contact />}/>
-        {/* <Route path="*" element={<ErrorPage func={setSelected}/>} /> */}
-      </Route>
-    </Routes>
-  </Router>
-);
 }
 
 
