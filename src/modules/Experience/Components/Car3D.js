@@ -10,7 +10,7 @@ export default function Car3D(props) {
   const group = useRef()
   const gltf = useGLTF('./Car3D/scene.gltf')
 
-  return (<primitive object={gltf.scene} />)
+  return (<primitive object={gltf.scene} position={props.position} />)
 }
 
 useGLTF.preload('/scene.gltf')

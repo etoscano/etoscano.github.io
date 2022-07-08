@@ -1,15 +1,18 @@
 
 import React, { Suspense, useEffect, useRef } from "react"
 import { Canvas, Dom, useFrame } from "react-three-fiber"
-import { Content } from "./Components/Content"
-import { Startup } from "./Components/Startup"
-import { Clouds } from "./Components/Clouds"
-import { Buildings } from "./Components/Buildings"
-import state from "./Database"
 import * as THREE from 'three'
-import Header from "./Components/Header/Header"
-import { useMeasures } from "./Measures"
 import Car3D from "./Components/Car3D"
+import * as dat from 'lil-gui'
+// import { Content } from "./Components/Content"
+// import { Startup } from "./Components/Startup"
+// import { Clouds } from "./Components/Clouds"
+// import { Buildings } from "./Components/Buildings"
+// import state from "./Database"
+
+// import Header from "./Components/Header/Header"
+// import { useMeasures } from "./Measures"
+
 
 // function Dolly() {
 //   const { fullHeight } = useMeasures()
@@ -30,9 +33,30 @@ import Car3D from "./Components/Car3D"
 
 function Experience() {
   // TODO viewport aspect useblock
-  const camera = new THREE.PerspectiveCamera(35, -1, 0.1, 100)
+  const camera = new THREE.PerspectiveCamera(50, 0, 0.1, 100)
   // const cam = useRef()
-  camera.position.set(-4, 0.5, 3)
+//   camera.position.set(-4, 0.5, 3)
+  camera.position.set(-20, 2, 10)
+  camera.lookAt(0, 0, 0)
+
+  /**
+ * Debug
+ */
+const gui = new dat.GUI({
+    // closed: true,
+    width: 400
+})
+// gui.hide()
+
+
+
+useEffect(() => {
+
+    gui.add(camera.position, 'x').min(- 20).max(20).step(0.1).name('Camera-X')
+    gui.add(camera.position, 'y').min(- 20).max(20).step(0.1).name('Camera-Y')
+    gui.add(camera.position, 'z').min(- 20).max(20).step(0.1).name('Camera-Z')
+
+  }, [])
   
   // const last = state.top.current
   // useFrame(() => {
@@ -60,10 +84,10 @@ function Experience() {
             >
 
           {/* <Clouds  args={[14,7, 256, 256]} rotation={[- Math.PI * 0.5, 0, 0]} position={[0, 0, -1]} frustumCulled={false} /> */}
-          <Car3D position={[0, 0, -3]}></Car3D>
+          <Car3D position={[0, 0, 0]}></Car3D>
           {/* <Buildings /> */}
           
-          <ambientLight color="white" intensity={5} />
+          <ambientLight color="white" intensity={3} />
 
           {/* <Dolly /> */}
 
