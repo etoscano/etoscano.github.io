@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Row from '../Row/Row.jsx';
 import Column from '../Column/Column.jsx';
-import Car from "../Car/Car";
+import Car2D from "../Car2D/Car2D";
 
 function Footer({setPage}) {
 
@@ -84,7 +84,7 @@ return (
         <Column size={1}  ></Column>
       </Row>
 
-      <Car></Car>
+      <Car2D></Car2D>
 
       <p className='footer__bottomParagraph'>Eleonora Toscano © 2022</p>
     </footer>

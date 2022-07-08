@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export default function Column({ children, center, sticky, bgColor, paddingLR, bgLines, paddingBottom, size, margins, extraClass, ...props }) {
   return (
-      <section className={[
+      <div className={[
         `col-${size}`,
         (margins? `col-${size}--margins` : '') ,
         (center? `col--center` : ''),
@@ -14,7 +14,7 @@ export default function Column({ children, center, sticky, bgColor, paddingLR, b
         extraClass
       ].join(' ')}>
         {children}
-      </section>
+      </div>
   );
 }
 

@@ -11,6 +11,8 @@ function Home() {
 
      <main className='home__main'>
 
+      <canvas></canvas>
+
         <Row extraClass="home__row">
             <Column size={1}  ></Column>
             

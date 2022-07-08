@@ -1,6 +1,6 @@
 import React , {useEffect} from 'react';
 
-function Car() {
+function Car2D() {
   var mouse = { x: 0, y: 0 }; //mouse.x, mouse.y
   // var width = document.documentElement.clientWidth;
   var width = 1440;
@@ -170,6 +170,6 @@ function Car() {
   );
 }
 
-export default Car;
+export default Car2D;
 
 
