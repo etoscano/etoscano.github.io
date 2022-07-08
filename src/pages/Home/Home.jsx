@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import Row from '../../modules/Row/Row.jsx';
 import Column from '../../modules/Column/Column.jsx';
+import Experience from '../../modules/Experience/Experience.jsx';
+
 
 function Home() {
 
@@ -11,7 +13,7 @@ function Home() {
 
      <main className='home__main'>
 
-      <canvas></canvas>
+      <Experience></Experience>
 
         <Row extraClass="home__row">
             <Column size={1}  ></Column>
