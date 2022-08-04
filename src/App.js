@@ -1,6 +1,6 @@
 import "./styles/main.scss";
 
-import React , {useState} from 'react';
+import React , {useEffect, useState} from 'react';
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import Home from './pages/Home/Home.jsx'
 import Contact from './pages/Contact/Contact.jsx';

@@ -33,10 +33,10 @@ import * as dat from 'lil-gui'
 
 function Experience() {
   // TODO viewport aspect useblock
-  const camera = new THREE.PerspectiveCamera(50, 0, 0.1, 100)
+  const camera = new THREE.PerspectiveCamera(30, 0, 0.1, 100)
   // const cam = useRef()
 //   camera.position.set(-4, 0.5, 3)
-  camera.position.set(-20, 2, 10)
+  camera.position.set(-10, 3, 20)
   camera.lookAt(0, 0, 0)
 
   /**
@@ -44,9 +44,9 @@ function Experience() {
  */
 const gui = new dat.GUI({
     // closed: true,
-    width: 400
+    width: 500
 })
-// gui.hide()
+gui.hide()
 
 
 
@@ -84,7 +84,7 @@ useEffect(() => {
             >
 
           {/* <Clouds  args={[14,7, 256, 256]} rotation={[- Math.PI * 0.5, 0, 0]} position={[0, 0, -1]} frustumCulled={false} /> */}
-          <Car3D position={[0, 0, 0]}></Car3D>
+          {/* <Car3D position={[0, 0, 0]}></Car3D> */}
           {/* <Buildings /> */}
           
           <ambientLight color="white" intensity={3} />

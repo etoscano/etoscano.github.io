@@ -55,7 +55,7 @@
   background-size: 30% 100px;
   /*background-image: linear-gradient(to right, #7cb9fd 2px, transparent 1px), linear-gradient(to bottom, #319baa 2px, transparent 1px);*/
   /*background: repeating-linear-gradient(-90deg, transparent, transparent 6px, #464646 6px, #464646 50%), repeating-linear-gradient(0deg, #464646, #464646 20px, #ffffff 2px, #ffffff 50%);*/
-  background: repeating-linear-gradient(-90deg, transparent, transparent 6px, $color-dark-gray 6px, $color-dark-gray 50%), repeating-linear-gradient(0deg, $color-dark-gray, $color-dark-gray 20px, #ffffff 2px, #ffffff 50%);
+  background: repeating-linear-gradient(-90deg, transparent, transparent 6px, $color-asphalt-gray 6px, $color-asphalt-gray 50%), repeating-linear-gradient(0deg, $color-asphalt-gray, $color-asphalt-gray 20px, #ffffff 2px, #ffffff 50%);
   width: 1440px;
   height: 100%;
   transform: perspective(100px) rotateX(55deg) scale(0.6);
