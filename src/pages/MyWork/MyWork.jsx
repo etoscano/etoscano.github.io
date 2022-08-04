@@ -6,10 +6,10 @@ import Column from '../../modules/Column/Column.jsx';
 
 import data from "../../Data";
 
-function Card({title, date, tech1, tech2}){
+function Card({title, date, tech1, tech2, tech3}){
     return(
 
-        <div  className='mywork__project'>
+        <a href="#link" className='mywork__project'>
             <div  className='mywork__container'>
                 <div  className='mywork__innerContainer'>
                     <h2  className='mywork__projectTitle'>{title}</h2>
@@ -22,9 +22,10 @@ function Card({title, date, tech1, tech2}){
                 <div className='mywork__techs'>
                     <p  className='mywork__tech'>{tech1}</p>
                     <p  className='mywork__tech'>{tech2}</p>
+                    <p  className='mywork__tech'>{tech3}</p>
                 </div>
             </div>
-        </div>
+        </a>
 
     );
   }
@@ -36,7 +37,12 @@ function ProjectsList({ source }) {
         <ul className="projects__list">
           {[...source].reverse().map((listitem) => (
             <li className="projects__section" key={listitem.index}>
-                <Card title={listitem.title} date={listitem.date} tech1={listitem.tech1} tech2={listitem.tech2}></Card>
+                <Card
+                title={listitem.title}
+                date={listitem.date} 
+                tech1={listitem.tech1}
+                tech2={listitem.tech2}
+                tech3={listitem.tech3}></Card>
             </li>
           ))}
         </ul>

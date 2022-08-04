@@ -2,7 +2,7 @@
 
 .mywork__main{
     padding-top: 104px; // header
-    padding-bottom: 96px;
+    padding-bottom: 32px;
     min-height: 100vh;
 }
 
@@ -20,7 +20,7 @@
     font-weight: 700;
     font-size: rem(28px);
     line-height: rem(36px);
-    margin-bottom: 18px;
+    margin-bottom: 32px;
     text-align: center;
 }
 
@@ -28,6 +28,7 @@
 .mywork__project{
     display: flex;
     flex-direction: column;
+    padding-bottom: 96px;
 }
 
 .mywork__container{
