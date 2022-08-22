@@ -1,6 +1,6 @@
 .contact__main{
     // padding-top: 104px; // header
-    padding-bottom: 96px;
+    // padding-bottom: 96px;
     min-height: 100vh;
 }
 
@@ -19,10 +19,13 @@
     font-style: normal;
     font-weight: 400;
     font-size: rem(16px);
-    line-height: rem(18px);
+    line-height: rem(20px);
     // text-align: center;
     margin-bottom: 18px;
     // padding-left:  16px;
+    & b{
+        font-weight: 700;
+    }
 }
 
 .contact__socialIcon{
@@ -170,4 +173,13 @@
     align-items: center;
     // margin-left: 16px;
     // margin-right: 16px;
+}
+
+.Toastify__toast.contact__success .Toastify__toast-body>div:last-child{
+    font-family: $font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: rem(20px);
+    color: $color-black;
 }
