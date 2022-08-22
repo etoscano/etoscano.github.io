@@ -31,7 +31,7 @@ return (
 
                 <div className='footer__textWrapper'>
                     <h2 className='footer__title'>Eleonora Toscano</h2>
-                    <p className='footer__paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac pla cerat rhoncus enim faucibus dui habitasse.</p>
+                    <p className='footer__paragraph'>Hello! I'm Eleonora Toscano. I'm a developer and interaction designer specialized in user experience.</p>
                 </div>
           </div>
 

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Row from '../../modules/Row/Row.jsx';
 import Column from '../../modules/Column/Column.jsx';
 import Experience from '../../modules/Experience/Experience.jsx';
+import Featured from '../../modules/Featured/Featured.jsx';
 
 
 function Home() {
@@ -32,6 +33,8 @@ function Home() {
               
               <div className='home__section2'>
                <h2 className='home__title'>Featured Projects</h2>
+
+               <Featured></Featured>
 
               </div>
                 
