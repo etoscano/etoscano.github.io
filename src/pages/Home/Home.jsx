@@ -13,7 +13,7 @@ function Home() {
 
      <main className='home__main'>
 
-      <Experience></Experience>
+      {/* <Experience></Experience> */}
 
         <Row extraClass="home__row">
             <Column size={1}  ></Column>
@@ -22,7 +22,8 @@ function Home() {
               <div className='home__section1'>
 
                 <h1 className='home__title'>I build amazing websites focused on experience</h1>
-                <p className='home__paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac placerat rhoncus enim faucibus dui hesf fesffabi.</p>
+                <p className='home__paragraph'>Hello! I'm Eleonora Toscano.</p>
+                <p className='home__paragraph'>I'm a <b>developer</b> and <b>interaction designer</b> specialized in user experience.</p>
 
                 <Link className='home__link' to="/contact"> Contact me
                   <img className="home__icon" src="./send.svg" alt=""></img>

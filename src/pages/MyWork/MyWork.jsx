@@ -6,14 +6,14 @@ import Column from '../../modules/Column/Column.jsx';
 
 import data from "../../Data";
 
-function Card({title, date, tech1, tech2, tech3}){
+function Card({title, date, tech1, tech2, tech3, id}){
     return(
 
         <a href="#link" className='mywork__project'>
             <div  className='mywork__container'>
                 <div  className='mywork__innerContainer'>
                     <h2  className='mywork__projectTitle'>{title}</h2>
-                    <img  className='mywork__img' src="./project_1.png" alt=""></img>
+                    <img  className='mywork__img' src={`./project_${id}.png`} alt=""></img>
                 </div>
             </div>
 
@@ -42,7 +42,8 @@ function ProjectsList({ source }) {
                 date={listitem.date} 
                 tech1={listitem.tech1}
                 tech2={listitem.tech2}
-                tech3={listitem.tech3}></Card>
+                tech3={listitem.tech3}
+                id={listitem.index}></Card>
             </li>
           ))}
         </ul>

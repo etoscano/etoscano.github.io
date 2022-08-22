@@ -84,7 +84,7 @@ return (
         <Column size={1}  ></Column>
       </Row>
 
-      <Car2D></Car2D>
+      {/* <Car2D></Car2D> */}
 
       <p className='footer__bottomParagraph'>Eleonora Toscano © 2022</p>
     </footer>

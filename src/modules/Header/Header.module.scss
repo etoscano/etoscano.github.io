@@ -128,7 +128,7 @@
   font-family: $font;
   font-style: normal;
   font-weight: 600;
-  font-size: rem(18px);
+  font-size: rem(16px);
   line-height: rem(42px);
 
   padding: 16px 48px;
@@ -136,14 +136,6 @@
 
   &--active:after {
     content: "";
-    // background: $color-gray;
-    // border-radius: 100px;
-    // width: 77px;
-    // height: 8px;
-    // position: absolute;
-    // top: 42px;
-    // left: 50%;
-    // transform: translate(-50%, 0);
     content: '';
     box-sizing: border-box;
     position: absolute;
@@ -153,8 +145,6 @@
     width: 100%;
     transform-origin: center;
     border-top: 2px solid $color-black;
-    // border-left: 2px solid $color-black;
-    // border-right: 2px solid $color-black;
     border-bottom: 2px  solid $color-black;
   }
 

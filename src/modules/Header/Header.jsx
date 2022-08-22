@@ -6,7 +6,7 @@ import Row from '../Row/Row.jsx';
 import Column from '../Column/Column.jsx';
 
 
-function Header({setPage, page}) {
+function Header({page}) {
 
   return (
     <>
@@ -16,7 +16,7 @@ function Header({setPage, page}) {
           
           <Column size={3}  >
   
-            <Link className={`header__logoLink `}  to="/" onClick={() => setPage('home')} aria-label={"Go to homepage"}>
+            <Link className={`header__logoLink `}  to="/" aria-label={"Go to homepage"}>
               <img className="header__logo" src="./ET.svg" alt="Eleonora Toscano logo"></img>
               <span className='header__logoText'>Eleonora Toscano</span>
             </Link>
@@ -28,16 +28,16 @@ function Header({setPage, page}) {
             <nav className="header__nav">
               <ul className="header__list">     
                   <li className={`header__item `}>
-                    <Link className={`header__link ${page === "home" ? "header__link--active" : ""} `}  to="/" onClick={() => setPage('home')} >Home</Link>
+                    <Link className={`header__link ${page === "/" ? "header__link--active" : ""} `}  to="/" >Home</Link>
                   </li>            
                   <li className={`header__item `}>
-                    <Link className={`header__link ${ page === "my-work" ? "header__link--active" : ""} `} to="/my-work" onClick={() => setPage('my-work')}> My Work </Link>
+                    <Link className={`header__link ${ page === "/my-work" ? "header__link--active" : ""} `} to="/my-work" > My Work </Link>
                   </li>
                   <li className={`header__item `}>
-                    <Link className={`header__link ${page ===  "about" ? "header__link--active" : ""} `} to="/about" onClick={() => setPage('about')}> About </Link>
+                    <Link className={`header__link ${page ===  "/about" ? "header__link--active" : ""} `} to="/about" > About </Link>
                   </li>     
                   <li className={`header__item `}>
-                    <Link className={`header__link ${page ===  "contact" ? "header__link--active" : ""} `} to="/contact" onClick={() => setPage('contact')}> Contact </Link>
+                    <Link className={`header__link ${page ===  "/contact" ? "header__link--active" : ""} `} to="/contact" > Contact </Link>
                   </li>           
               </ul>        
             </nav>

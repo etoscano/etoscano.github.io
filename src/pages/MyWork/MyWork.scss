@@ -14,12 +14,12 @@
 }
 
 .mywork__title{
-    padding-top: 32px;
+    padding-top: 8px;
     font-family: $font;
     font-style: normal;
     font-weight: 700;
-    font-size: rem(28px);
-    line-height: rem(36px);
+    font-size: rem(24px);
+    line-height: rem(32px);
     margin-bottom: 32px;
     text-align: center;
 }
@@ -36,15 +36,14 @@
     padding: 16px;
 }
 
-.mywork__innerContainer{
-    position: relative;
-}
+// .mywork__innerContainer{
+//     position: relative;
+// }
 
 .mywork__projectTitle{
     background-color: #4E5E57;
     padding-right: 32px;
     text-align: right;
-    position: absolute;
     width: 100%;
     color: $color-white;
     font-family: $font;
@@ -52,7 +51,6 @@
     font-weight: 700;
     font-size: rem(22px);
     line-height: rem(48px);
-    margin-bottom: 40px;
 }
 
 .mywork__img{

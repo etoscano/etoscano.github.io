@@ -1,7 +1,7 @@
 import "./styles/main.scss";
 
 import React , {useEffect, useState} from 'react';
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Outlet, useLocation } from "react-router-dom";
 import Home from './pages/Home/Home.jsx'
 import Contact from './pages/Contact/Contact.jsx';
 import Footer from './modules/Footer/Footer.jsx';
@@ -26,15 +26,19 @@ function App() {
 
   function Layout() {
 
-    const [page, setPage] = useState('home');
+
+    const location = useLocation()
+    // ...
+    useEffect(() => {
+    }, [location])
 
     return (
       <>
-        <Header page={page} setPage={setPage}></Header>
+        <Header page={location.pathname} ></Header>
     
         <Outlet />
     
-        <Footer setPage={setPage}></Footer>
+        <Footer></Footer>
       </>
     );
   }
