@@ -32,10 +32,8 @@ function Home() {
               </div>
               
               <div className='home__section2'>
-               <h2 className='home__title'>Featured Projects</h2>
-
+               <h2 className='home__title2'>Featured Projects</h2>
                <Featured></Featured>
-
               </div>
                 
             </Column>

@@ -8,6 +8,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-three/drei": "^9.17.0",
     "@react-three/fiber": "^8.2.2",
+    "@splidejs/react-splide": "^0.7.8",
     "@splidejs/splide": "^4.0.7",
     "@splidejs/splide-extension-grid": "^0.4.1",
     "dotenv": "^16.0.1",

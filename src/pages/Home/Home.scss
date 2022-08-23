@@ -4,7 +4,7 @@
 .home__main{
 }
 
-.home__title{
+.home__title, .home__title2{
     font-family: $font;
     font-style: normal;
     font-weight: 700;
@@ -82,10 +82,22 @@
     justify-content: center;
 }
 .home__section2{
-    min-height: 100vh;
+    padding: 40px;
+    // min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: $color-light-gray;
+}
+
+.home__title2{
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.home__featured{
+    flex-basis: 0;
+    flex-grow: 1;
 }
