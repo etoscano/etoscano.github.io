@@ -29,6 +29,12 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 96px;
+
+    &:hover{
+        .mywork__img{
+            filter: none;
+        }
+    }
 }
 
 .mywork__container{
@@ -55,7 +61,8 @@
 
 .mywork__img{
     min-height: 100px;
-
+    filter: grayscale(0.8);
+    transition: 0.3s;
 }
 
 .mywork__year{

@@ -11,19 +11,6 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
   
-  // return (
-  //   <Router>
-  //     <Routes>
-  //       <Route path="/" element={<Layout />}>
-          // <Route index element={<Home />} />
-          // <Route path="/my-work" element={<MyWork />} />
-          // <Route path="/about" />
-          // <Route path="/contact" element={<Contact />}/>
-          // {/* <Route path="*" element={<ErrorPage func={setSelected}/>} /> */}
-  //       </Route>
-  //     </Routes>
-  //   </Router>
-
   return (
     <Router>
       <AnimatedRoutes />
