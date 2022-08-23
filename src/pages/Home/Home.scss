@@ -12,8 +12,8 @@
     line-height: rem(48px);
     margin-bottom: 40px;
     max-width: 20ch;
-    color: $color-white;
-    mix-blend-mode: exclusion;
+    color: $color-black;
+    // mix-blend-mode: exclusion;
 }
 
 
@@ -73,6 +73,19 @@
 }
 
 .home__section1{
+    display: flex;
+}
+
+.home__phoneWrapper{
+    position: relative;
+    width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.home__textWrapper{
+    flex-basis: 0;
+    flex-grow: 1;
     padding-top: 104px; // header
     padding-bottom: 96px;
     min-height: 100vh;
