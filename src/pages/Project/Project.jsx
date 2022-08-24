@@ -32,12 +32,13 @@ function Project({id}){
             </a>
             }
 
-            <Splide aria-label="My Favorite Images" className='home__featured'
+            <Splide aria-label="My Favorite Images" className='project__slider'
             options={ {
-                direction: 'ttb',
-                height   : '240px',
-                wheel    : true,
-            } }>
+                type   : 'loop',
+                drag   : 'free',
+                snap   : true,
+                perPage: 1,
+              } }>
                 
             {[...project.imgs].map((img, index) => (
                 <SplideSlide key={index}>

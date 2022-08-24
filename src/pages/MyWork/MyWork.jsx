@@ -24,8 +24,9 @@ function Card({title, date, tech, imgs, path}){
             <div className='mywork__info'>
                 <p  className='mywork__year'>{date}</p>
                 <div className='mywork__techs'>
-                    <p  className='mywork__tech'>{tech}</p>
-                    <p  className='mywork__tech'>{imgs}</p>
+                  {[...tech].map((t,index) => (
+                    <p  className='mywork__tech'>{t}</p>
+                  ))}
                 </div>
             </div>
         {/* </a> */}
@@ -48,7 +49,6 @@ function ProjectsList({ source }) {
                 imgs={listitem.imgs}
                 path={listitem.path}
                 ></Card>
-                {listitem.path}
             </li>
           ))}
         </ul>

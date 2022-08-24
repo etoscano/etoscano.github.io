@@ -2,7 +2,7 @@
 
 .mywork__main{
     padding-top: 104px; // header
-    padding-bottom: 32px;
+    // padding-bottom: 32px;
     min-height: 100vh;
 }
 
@@ -81,7 +81,11 @@
 
 
 .mywork__tech{
-    margin-left: 16px;
+    padding: 0 12px;
+    border-right: 2px solid $color-black;
+    &:last-child{
+        border-right: none;
+    }
 }
 
 

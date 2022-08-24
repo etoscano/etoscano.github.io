@@ -30,6 +30,9 @@ function App() {
             <Route path="/about" />
             <Route path="/contact" element={<Contact />}/>
             <Route path="/my-work/dynamic-website" element={<Project id="dynamic-website"/>}/>
+            <Route path="/my-work/smart-space-games" element={<Project id="smart-space-games"/>}/>
+            <Route path="/my-work/conversational-interface" element={<Project id="conversational-interface"/>}/>
+            <Route path="/my-work/mixed-reality" element={<Project id="mixed-reality"/>}/>
             {/* <Route path="*" element={<ErrorPage func={setSelected}/>} /> */}
           </Route>
         </Routes>
