@@ -29,7 +29,7 @@ function Home() {
                   <p className='home__paragraph'>I'm a <b>developer</b> and <b>interaction designer</b> specialized in user experience.</p>
 
                   <Link className='home__link' to="/contact"> Contact me
-                    <img className="home__icon" src="./send.svg" alt=""></img>
+                    <img className="home__icon" src="/send.svg" alt=""></img>
                   </Link>
                 </div>
 

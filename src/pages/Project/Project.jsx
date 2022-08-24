@@ -5,12 +5,16 @@ import Row from '../../modules/Row/Row.jsx';
 import Column from '../../modules/Column/Column.jsx';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
+import parse from 'html-react-parser';
 import data from "../../Data";
+
+function Parser(props){
+    return parse(props.toParse);
+}
 
 function Project({id}){
 
     const project = data.projects.list.find(obj => obj.path === id);
-
 
     return(
 
@@ -23,7 +27,8 @@ function Project({id}){
 
             <h1 className='project__title'>{project.title}</h1>
 
-            <p className='project__desc'>{project.desc}</p>
+            <div className='project__desc'><Parser toParse={project.desc}/></div>
+            
 
             {project.githubLink && 
             <a className={`project__githubLink  `} href={`${project.githubLink}`} >

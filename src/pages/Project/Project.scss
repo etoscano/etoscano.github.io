@@ -62,3 +62,14 @@
 .project__slider{
     padding-top: 20px;
 }
+
+.project__desc{
+
+    & strong, & b{
+        font-weight: 700;
+    }
+
+    & i{
+        font-style: italic;
+    }
+}

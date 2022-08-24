@@ -71,17 +71,17 @@ function Contact() {
                     <ul className="contact__outerList">     
                         <li className={`contact__outerItem `}>
                           <a className={`contact__outerLink `}  href="https://github.com/etoscano/" aria-label='Github' >
-                          <img className="contact__socialIcon" src="./icon-github.svg" alt=""></img>                   
+                          <img className="contact__socialIcon" src="/icon-github.svg" alt=""></img>                   
                             </a>
                         </li>            
                         <li className={`contact__outerItem `}>
                           <a className={`contact__outerLink `} href="https://www.linkedin.com/in/eleonora-toscano/" aria-label='LinkedIn' >
-                          <img className="contact__socialIcon" src="./icon-linkedin.svg" alt=""></img>                   
+                          <img className="contact__socialIcon" src="/icon-linkedin.svg" alt=""></img>                   
                           </a>
                         </li>
                         <li className={`contact__outerItem `}>
                           <a className={`contact__outerLink  `} href="mailto:toscano.eleonora97@gmail.com" aria-label='Email' >
-                          <img className="contact__socialIcon" src="./icon-email.svg" alt=""></img> 
+                          <img className="contact__socialIcon" src="/icon-email.svg" alt=""></img> 
                           </a>
                         </li>               
                     </ul>        
@@ -123,7 +123,7 @@ function Contact() {
                   )} 
 
                   <button className='contact__button' type="submit">Send message
-                  <img className="contact__icon" src="./send.svg" alt=""></img>
+                  <img className="contact__icon" src="/send.svg" alt=""></img>
                   </button>
                 </form>
 

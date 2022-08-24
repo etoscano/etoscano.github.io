@@ -25,7 +25,7 @@ function Card({title, date, tech, imgs, path}){
                 <p  className='mywork__year'>{date}</p>
                 <div className='mywork__techs'>
                   {[...tech].map((t,index) => (
-                    <p  className='mywork__tech'>{t}</p>
+                    <p  className='mywork__tech' key={index}>{t}</p>
                   ))}
                 </div>
             </div>
@@ -40,7 +40,7 @@ function ProjectsList({ source }) {
     <>
       {source ? (
         <ul className="projects__list">
-          {[...source].reverse().map((listitem,index) => (
+          {[...source].map((listitem,index) => (
             <li className="projects__section" key={index}>
                 <Card
                 title={listitem.title}
