@@ -7,6 +7,7 @@ import Contact from './pages/Contact/Contact.jsx';
 import Footer from './modules/Footer/Footer.jsx';
 import MyWork from './pages/MyWork/MyWork.jsx';
 import Header from "./modules/Header/Header";
+import Project from "./pages/Project/Project";
 import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/my-work" element={<MyWork />} />
             <Route path="/about" />
             <Route path="/contact" element={<Contact />}/>
+            <Route path="/my-work/dynamic-website" element={<Project id="dynamic-website"/>}/>
             {/* <Route path="*" element={<ErrorPage func={setSelected}/>} /> */}
           </Route>
         </Routes>

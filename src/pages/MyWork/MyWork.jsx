@@ -6,26 +6,30 @@ import Column from '../../modules/Column/Column.jsx';
 
 import data from "../../Data";
 
-function Card({title, date, tech1, tech2, tech3, id}){
+function Card({title, date, tech, imgs, path}){
+
+  const projectsPath = '/my-work'
+
     return(
 
-        <a href="#link" className='mywork__project'>
+      <Link className={`mywork__project`} to={`${projectsPath}/${path}`} >
+        {/* <a href="#link" className='mywork__project'> */}
             <div  className='mywork__container'>
                 <div  className='mywork__innerContainer'>
                     <h2  className='mywork__projectTitle'>{title}</h2>
-                    <img  className='mywork__img' src={`./project_${id}.png`} alt=""></img>
+                    <img  className='mywork__img' src={`${imgs[0]}`} alt=""></img>
                 </div>
             </div>
 
             <div className='mywork__info'>
                 <p  className='mywork__year'>{date}</p>
                 <div className='mywork__techs'>
-                    <p  className='mywork__tech'>{tech1}</p>
-                    <p  className='mywork__tech'>{tech2}</p>
-                    <p  className='mywork__tech'>{tech3}</p>
+                    <p  className='mywork__tech'>{tech}</p>
+                    <p  className='mywork__tech'>{imgs}</p>
                 </div>
             </div>
-        </a>
+        {/* </a> */}
+        </Link>
 
     );
   }
@@ -35,15 +39,16 @@ function ProjectsList({ source }) {
     <>
       {source ? (
         <ul className="projects__list">
-          {[...source].reverse().map((listitem) => (
-            <li className="projects__section" key={listitem.index}>
+          {[...source].reverse().map((listitem,index) => (
+            <li className="projects__section" key={index}>
                 <Card
                 title={listitem.title}
                 date={listitem.date} 
-                tech1={listitem.tech1}
-                tech2={listitem.tech2}
-                tech3={listitem.tech3}
-                id={listitem.index}></Card>
+                tech={listitem.tech}
+                imgs={listitem.imgs}
+                path={listitem.path}
+                ></Card>
+                {listitem.path}
             </li>
           ))}
         </ul>

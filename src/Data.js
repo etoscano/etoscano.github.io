@@ -3,40 +3,34 @@ const data = {
   projects: {
     list: [
       {
-        index: 0,
         title: "Dynamic Website",
         date: 2021,
-        tech1: "HTML/CSS",
-        tech2: "JavaScript",
-        tech3: "SQL"
-        // img: "img_6.jpeg"
+        tech: ["HTML/CSS", "JavaScript", "SQL"],
+        path: "dynamic-website",
+        desc: "In this project I've created a dynamic website. IDM submodels have been used for Content, Navigation and Presentation design and interaction scenarios have been created to describe the flow of usage. After the website design I have implemented it using HTML, CSS, JavaScript and SQL.",
+        imgs: ["project_0.png", "project_1.png"],
+        githubLink: "https://github.com/etoscano/HYPE"
       },     
       {
-        index: 1,
         title: "Mixed Reality Educational Tool",
         date: 2021,
-        tech1: "Unity",
-        tech2: "Vuforia",
-        tech3: "Firebase"
-        // img: "img_6.jpeg"
+        tech: ["Unity", "Vuforia", "Firebase"],
+        path: "mixed-reality",
+        imgs: ["project_1.png", "project_0.png"],
       },   
       {
-        index: 2,
         title: "Conversational Interfaces for Smart Home",
         date: 2021,
-        tech1: "ROS",
-        tech2: "AWS",
-        tech3: "Linux"
-        // img: "img_6.jpeg"
+        tech: ["ROS", "AWS", "Linux"],
+        path: "conversational-interface",
+        imgs: ["project_2.png", "project_1.png"],
       },     
       {
-        index: 3,
         title: "Smart Space Games",
         date: 2020,
-        tech1: "Unity",
-        tech2: "Kinect",
-        tech3: "Arduino"
-        // img: "img_6.jpeg"
+        tech: ["Unity", "Kinect", "Arduino"],
+        path: "smart-space-games",
+        imgs: ["project_3.png", "project_1.png"],
       },
     ]
   }

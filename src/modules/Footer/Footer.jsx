@@ -14,9 +14,9 @@ return (
     <footer className="footer">
 
       <div className='footer__quoteContainer'>
-        <img className="footer__arrow" src="./arrow.svg" alt=""></img>
+        <img className="footer__arrow" src="/arrow.svg" alt=""></img>
         <p className='footer__quote'>It’s not the destination. It's the journey.</p>
-        <img className="footer__arrow" src="./arrow.svg" alt=""></img>
+        <img className="footer__arrow" src="/arrow.svg" alt=""></img>
       </div>
 
       <Row extraClass={"footer__row"}>
@@ -26,7 +26,7 @@ return (
 
            <div className='footer__wrapper'>
                 <Link className={`footer__logoLink `}  to="/" onClick={() => setPage('home')} aria-label={"Go to homepage"}>
-                    <img className="footer__logo" src="./ET.svg" alt="Eleonora Toscano logo"></img>
+                    <img className="footer__logo" src="/ET.svg" alt="Eleonora Toscano logo"></img>
                 </Link>
 
                 <div className='footer__textWrapper'>
@@ -39,19 +39,19 @@ return (
             <ul className="footer__outerList">     
                 <li className={`footer__outerItem `}>
                   <a className={`footer__outerLink `}  href="https://github.com/etoscano/"  >
-                  <img className="footer__socialIcon" src="./icon-github.svg" alt=""></img>                   
+                  <img className="footer__socialIcon" src="/icon-github.svg" alt=""></img>                   
                     <span className='footer__linkText'>Github</span>
                     </a>
                 </li>            
                 <li className={`footer__outerItem `}>
                   <a className={`footer__outerLink `} href="https://www.linkedin.com/in/eleonora-toscano/" >
-                  <img className="footer__socialIcon" src="./icon-linkedin.svg" alt=""></img>                   
+                  <img className="footer__socialIcon" src="/icon-linkedin.svg" alt=""></img>                   
                     <span className='footer__linkText'>LinkedIn</span>
                   </a>
                 </li>
                 <li className={`footer__outerItem `}>
                   <a className={`footer__outerLink  `} href="mailto:toscano.eleonora97@gmail.com" >
-                  <img className="footer__socialIcon" src="./icon-email.svg" alt=""></img> 
+                  <img className="footer__socialIcon" src="/icon-email.svg" alt=""></img> 
                     <span className='footer__linkText'>Email</span>
                   </a>
                 </li>               

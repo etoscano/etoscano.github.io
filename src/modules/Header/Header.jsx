@@ -17,7 +17,7 @@ function Header({page}) {
           <Column size={3}  >
   
             <Link className={`header__logoLink `}  to="/" aria-label={"Go to homepage"}>
-              <img className="header__logo" src="./ET.svg" alt="Eleonora Toscano logo"></img>
+              <img className="header__logo" src="/ET.svg" alt="Eleonora Toscano logo"></img>
               <span className='header__logoText'>Eleonora Toscano</span>
             </Link>
   
@@ -33,9 +33,9 @@ function Header({page}) {
                   <li className={`header__item `}>
                     <Link className={`header__link ${ page === "/my-work" ? "header__link--active" : ""} `} to="/my-work" > My Work </Link>
                   </li>
-                  <li className={`header__item `}>
+                  {/* <li className={`header__item `}>
                     <Link className={`header__link ${page ===  "/about" ? "header__link--active" : ""} `} to="/about" > About </Link>
-                  </li>     
+                  </li>      */}
                   <li className={`header__item `}>
                     <Link className={`header__link ${page ===  "/contact" ? "header__link--active" : ""} `} to="/contact" > Contact </Link>
                   </li>           
