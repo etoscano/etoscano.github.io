@@ -190,7 +190,7 @@ const data = {
         githubLink: "https://github.com/mariacamilarg/board_games"
       },             
       {
-        title: "Website design and implementation",
+        title: "Website Design and Implementation",
         date: 2020,
         tech: ["HTML/CSS", "Figma"],
         path: "website-design-and-implementation",
