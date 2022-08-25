@@ -24,7 +24,6 @@
 .project__githubLink{
     display: flex;
     align-items: center;
-    min-width: 12ch;
 
       &:hover .project__socialIcon {
         filter: invert(100%);
@@ -39,7 +38,7 @@
 .project__linkText{
     position: relative;
     line-height: rem(32px);
-    padding-left: 8px;
+    margin-left: 8px;
 
     &::before {
         content: '';
@@ -72,4 +71,19 @@
     & i{
         font-style: italic;
     }
+}
+
+
+.project__fig{
+    padding: 0 16px;
+}
+
+.project__img{
+    width: 100%;
+    display: block;
+}
+
+.project__caption{
+    text-align: center;
+    padding-top: 16px;
 }

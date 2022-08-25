@@ -35,7 +35,7 @@
 @import '@splidejs/react-splide/css';
 // or other themes
 // @import '@splidejs/react-splide/css/skyblue';
-// @import '@splidejs/react-splide/css/sea-green';
+@import '@splidejs/react-splide/css/sea-green';
 // // or only core styles
 // @import '@splidejs/react-splide/css/core';
 
@@ -66,4 +66,16 @@ body{
     width:1px;
     height:1px;
     overflow:hidden;
-    }
+}
+
+
+// Splide
+.splide{
+    padding: 1.5em 3em 3em;
+}
+
+$captionHeight: 30px;
+
+.splide__arrow{
+    transform: translateY(calc(-50% - #{$captionHeight}));
+}

@@ -9,7 +9,16 @@ const data = {
         path: "conversational-interface",
         summary: ``,
         desc: ``,
-        imgs: ["project_2.png", "project_1.png"],
+        imgs: [
+          {
+            path: "project_2.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_1.png",
+            caption: "My caption1"
+          }
+        ],
       },     
       {
         title: "Smart Space Games",
@@ -18,7 +27,16 @@ const data = {
         path: "smart-space-games",
         summary: `Development of <strong>smart space games</strong> in Unity using projectors, a Kinect and Arduino `,
         desc: `<strong>GEA++</strong> is a Smart Space application for children with Neurodevelopmental Disorders. It focuses on nutrition education. The three activities proposed are based on real laboratory activities that children do in a local specialized center. An image shows the configuration of the the smart room environment. The images above show some components used to build the pyramid smart object and the smart room at i3lab, where we tested the games. The interaction for the first two games is based on hand tracking while the third game relies on the pyramid smart object. My team and I have created a pyramid smart object for one of the games. Inside the smart room there were the frontal and the floor projections.`,
-        imgs: ["project_3.png", "project_1.png"],
+        imgs: [
+          {
+            path: "project_3.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_1.png",
+            caption: "My caption1"
+          }
+        ],
       },     
       {
         title: "Mixed Reality Educational Tool",
@@ -37,7 +55,16 @@ const data = {
         Also, placing two cubes close to each other allows the user to learn about the differences between the two countries.
         <br>
         <br> `,
-        imgs: ["project_1.png", "project_0.png"],
+        imgs: [
+          {
+            path: "project_1.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_0.png",
+            caption: "My caption1"
+          }
+        ],
       },      
       {
         title: "Augmented Reality for a card game",
@@ -79,7 +106,16 @@ const data = {
                 </ul>
             </li>
         </ul>`,
-        imgs: ["project_3.png", "project_1.png"],
+        imgs: [
+          {
+            path: "project_3.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_1.png",
+            caption: "My caption1"
+          }
+        ],
       }, 
       {
         title: "Dynamic Website",
@@ -88,7 +124,16 @@ const data = {
         path: "dynamic-website",
         summary: `<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and <strong>SQL</strong> implementation of a dynamic website from IDM specifications`,
         desc: `In this project I've created a dynamic website. IDM submodels have been used for Content, Navigation and Presentation design and interaction scenarios have been created to describe the flow of usage. After the website design I have implemented it using HTML, CSS, JavaScript and SQL.`,
-        imgs: ["project_0.png", "project_1.png"],
+        imgs: [
+          {
+            path: "project_2.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_1.png",
+            caption: "My caption1"
+          }
+        ],
         githubLink: "https://github.com/etoscano/HYPE"
       },  
       {
@@ -98,7 +143,16 @@ const data = {
         path: "java-game",
         summary: `<strong>Java implementation</strong> of Adrenaline, a <strong>board game</strong> by Czech Games`,
         desc: `This is the Java implementation of Adrenaline, a board game by Czech Games. It's a multiplayer game and you can compete against other users. The command line interface is fully implemented while the <b>graphical user interface</b> that you can see <b>below</b> is only partially implemented.`,
-        imgs: ["project_0.png", "project_1.png"],
+        imgs: [
+          {
+            path: "project_2.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_1.png",
+            caption: "My caption1"
+          }
+        ],
         githubLink: "https://github.com/etoscano/ing-sw-2019-29"
       },         
       {
@@ -113,7 +167,16 @@ const data = {
         <br>
         The user can move annotations and edit them (e.g. change color, size and font). The application
         automatically saves all the annotations and restores them when the same image is opened again.`,
-        imgs: ["project_0.png", "project_1.png"],
+        imgs: [
+          {
+            path: "project_2.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_1.png",
+            caption: "My caption1"
+          }
+        ],
         githubLink: "https://github.com/etoscano/AnnotationsOnImage"
       },         
       {
@@ -140,7 +203,16 @@ const data = {
         <br>
         <b class="orange">We have used some design principles, such as reification and reuse, to improve the
             design process.</b>`,
-        imgs: ["project_0.png", "project_1.png"]
+            imgs: [
+              {
+                path: "project_2.png",
+                caption: "My caption"
+              },
+              {
+                path: "project_1.png",
+                caption: "My caption1"
+              }
+            ],
       },          
       {
         title: "Remote Meeting Bot",
@@ -154,7 +226,16 @@ const data = {
         <h5>Description of the project</h5>
         For this project my team and I designed and prototyped a bot aimed at promoting engagement in remote meetings. We used the Design Thinking technique for the process.
                         If you are interest, you can read the documentation <a href="/documents/EleonoraToscano-RemoteMeetingBot.pdf"><b class="orange">here</b></a>.`,
-        imgs: ["project_0.png", "project_1.png"],
+        imgs: [
+          {
+            path: "project_2.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_1.png",
+            caption: "My caption1"
+          }
+        ],
         githubLink: "https://github.com/bruhnth17/zoom-bot-prototype"
       },          
       {
@@ -170,7 +251,16 @@ const data = {
         <br>
         <p>Given the sensitive content of the report me and my team have composed, I will only show the topics of said report and the timeline that we have followed.
         </p>`,
-        imgs: ["project_0.png", "project_1.png"]
+        imgs: [
+          {
+            path: "project_2.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_1.png",
+            caption: "My caption1"
+          }
+        ],
       },            
       {
         title: "Dash Python Application",
@@ -186,7 +276,16 @@ const data = {
         <br>
         <br>
         <b>Below there are the images of our prototype, implemented using Dash (Python).</b>`,
-        imgs: ["project_0.png", "project_1.png"],
+        imgs: [
+          {
+            path: "project_2.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_1.png",
+            caption: "My caption1"
+          }
+        ],
         githubLink: "https://github.com/mariacamilarg/board_games"
       },             
       {
@@ -199,7 +298,16 @@ const data = {
         innovative idea. We have designed and prototyped Matty, an interactive yoga mat that can reduce stress
         in ASD children.
         To present our work we have created the website that you can see.</p>`,
-        imgs: ["project_0.png", "project_1.png"],
+        imgs: [
+          {
+            path: "project_2.png",
+            caption: "My caption"
+          },
+          {
+            path: "project_1.png",
+            caption: "My caption1"
+          }
+        ],
         githubLink: "https://github.com/etoscano/IDS"
       },     
     ]

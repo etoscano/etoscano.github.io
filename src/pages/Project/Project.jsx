@@ -39,15 +39,23 @@ function Project({id}){
 
             <Splide aria-label="My Favorite Images" className='project__slider'
             options={ {
-                type   : 'loop',
+                // type   : 'loop',
                 drag   : 'free',
                 snap   : true,
-                perPage: 1,
+                // height   : '10rem',
+                // focus    : 'center',
+                // fixedWidth : '600px',
+                // fixedHeight: '300px',
+                // gap        : '1rem',
+                // autoWidth: true,
               } }>
                 
             {[...project.imgs].map((img, index) => (
                 <SplideSlide key={index}>
-                    <img  className='project__img' src={`/${img}`} alt=""/>
+                    <figure className='project__fig'>
+                      <img className='project__img' src={`/${img.path}`} alt=""/>
+                      <figcaption className='project__caption'>{img.caption}</figcaption>
+                    </figure>
                 </SplideSlide>
             ))}
 
