@@ -87,35 +87,35 @@ function Car2D() {
   
     //Apply css class
     if (dir == "right7") {
-      imgcar.src = "./CarR7.png";
+      imgcar.src = "/car2D/CarR7.png";
     } else if (dir == "right6") {
-      imgcar.src = "./CarR6.png";
+      imgcar.src = "/car2D/CarR6.png";
     } else if (dir == "right5") {
-      imgcar.src = "./CarR5.png";
+      imgcar.src = "/car2D/CarR5.png";
     } else if (dir == "right4") {
-      imgcar.src = "./CarR4.png";
+      imgcar.src = "/car2D/CarR4.png";
     } else if (dir == "right3") {
-      imgcar.src = "./CarR3.png";
+      imgcar.src = "/car2D/CarR3.png";
     } else if (dir == "right2") {
-      imgcar.src = "./CarR2.png";
+      imgcar.src = "/car2D/CarR2.png";
     } else if (dir == "right1") {
-      imgcar.src = "./CarR1.png";
+      imgcar.src = "/car2D/CarR1.png";
     } else if (dir == "normal") {
-      imgcar.src = "./Car1.png";
+      imgcar.src = "/car2D/Car1.png";
     } else if (dir == "left1") {
-      imgcar.src = "./CarL1.png";
+      imgcar.src = "/car2D/CarL1.png";
     } else if (dir == "left2") {
-      imgcar.src = "./CarL2.png";
+      imgcar.src = "/car2D/CarL2.png";
     } else if (dir == "left3") {
-      imgcar.src = "./CarL3.png";
+      imgcar.src = "/car2D/CarL3.png";
     } else if (dir == "left4") {
-      imgcar.src = "./CarL4.png";
+      imgcar.src = "/car2D/CarL4.png";
     } else if (dir == "left5") {
-      imgcar.src = "./CarL5.png";
+      imgcar.src = "/car2D/CarL5.png";
     } else if (dir == "left6") {
-      imgcar.src = "./CarL6.png";
+      imgcar.src = "/car2D/CarL6.png";
     } else if (dir == "left7") {
-      imgcar.src = "./CarL7.png";
+      imgcar.src = "/car2D/CarL7.png";
     }
   
   }
@@ -157,7 +157,7 @@ function Car2D() {
 </svg>
 
 <div className="js-footer__car footer__car">
-    <img src="./Car1.png" className="js-footer__img footer__img" alt="A car"/>
+    <img src="/car2D/Car1.png" className="js-footer__img footer__img" alt="A car"/>
 </div>
 <div className=" js-footer__bg footer__road">
 </div>

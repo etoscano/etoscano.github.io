@@ -15,6 +15,7 @@ function Parser(props){
 function Project({id}){
 
     const project = data.projects.list.find(obj => obj.path === id);
+    const imgsPath = '/projects/'
 
     return(
 
@@ -53,7 +54,7 @@ function Project({id}){
             {[...project.imgs].map((img, index) => (
                 <SplideSlide key={index}>
                     <figure className='project__fig'>
-                      <img className='project__img' src={`/${img.path}`} alt=""/>
+                      <img className='project__img' src={`${imgsPath}${img.path}`} alt=""/>
                       <figcaption className='project__caption'>{img.caption}</figcaption>
                     </figure>
                 </SplideSlide>

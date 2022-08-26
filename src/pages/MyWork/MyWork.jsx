@@ -9,6 +9,7 @@ import data from "../../Data";
 function Card({title, date, tech, imgs, path}){
 
   const projectsPath = '/my-work'
+  const imgsPath = '/projects/'
 
     return(
 
@@ -17,7 +18,7 @@ function Card({title, date, tech, imgs, path}){
             <div  className='mywork__container'>
                 <div  className='mywork__innerContainer'>
                     <h2  className='mywork__projectTitle'>{title}</h2>
-                    <img  className='mywork__img' src={`${imgs[0].path}`} alt={`${imgs[0].caption}`}></img>
+                    <img  className='mywork__img' src={`${imgsPath}${imgs[0].path}`} alt={`${imgs[0].caption}`}></img>
                 </div>
             </div>
 
