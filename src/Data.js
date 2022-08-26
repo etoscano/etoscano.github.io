@@ -11,8 +11,8 @@ const data = {
         desc: ``,
         imgs: [
           {
-            path: "project_2.png",
-            caption: "My caption"
+            path: "conversational0.png",
+            caption: ""
           },
           {
             path: "project_1.png",
@@ -29,12 +29,28 @@ const data = {
         desc: `<strong>GEA++</strong> is a Smart Space application for children with Neurodevelopmental Disorders. It focuses on nutrition education. The three activities proposed are based on real laboratory activities that children do in a local specialized center. An image shows the configuration of the the smart room environment. The images above show some components used to build the pyramid smart object and the smart room at i3lab, where we tested the games. The interaction for the first two games is based on hand tracking while the third game relies on the pyramid smart object. My team and I have created a pyramid smart object for one of the games. Inside the smart room there were the frontal and the floor projections.`,
         imgs: [
           {
-            path: "project_3.png",
+            path: "GEA0.png",
+            caption: "Development of smart space games in Unity using projectors, a Kinect and Arduino"
+          },
+          {
+            path: "GEA1.png",
             caption: "My caption"
           },
           {
-            path: "project_1.png",
-            caption: "My caption1"
+            path: "GEA2.png",
+            caption: "My caption"
+          },
+          {
+            path: "GEA3.png",
+            caption: "My caption"
+          },
+          {
+            path: "GEA4.png",
+            caption: "My caption"
+          },
+          {
+            path: "GEA5.png",
+            caption: "My caption"
           }
         ],
       },     
@@ -57,11 +73,15 @@ const data = {
         <br> `,
         imgs: [
           {
-            path: "project_1.png",
+            path: "Map0.png",
+            caption: "Unity implementation of a Mixed Reality educational tool for learning geography"
+          },
+          {
+            path: "Map1.png",
             caption: "My caption"
           },
           {
-            path: "project_0.png",
+            path: "Map2.png",
             caption: "My caption1"
           }
         ],
@@ -108,6 +128,10 @@ const data = {
         </ul>`,
         imgs: [
           {
+            path: "project_0.png",
+            caption: "Augmented Reality application to enhance the experience of trading Magic: The Gathering cards"
+          },          
+          {
             path: "project_3.png",
             caption: "My caption"
           },
@@ -126,12 +150,28 @@ const data = {
         desc: `In this project I've created a dynamic website. IDM submodels have been used for Content, Navigation and Presentation design and interaction scenarios have been created to describe the flow of usage. After the website design I have implemented it using HTML, CSS, JavaScript and SQL.`,
         imgs: [
           {
-            path: "project_2.png",
+            path: "website0.png",
+            caption: "HTML, CSS, JavaScript and SQL implementation of a dynamic website from IDM specifications"
+          },          
+          {
+            path: "website1.png",
             caption: "My caption"
           },
           {
-            path: "project_1.png",
-            caption: "My caption1"
+            path: "website2.png",
+            caption: "My caption"
+          },
+          {
+            path: "website3.png",
+            caption: "My caption"
+          },
+          {
+            path: "website4.png",
+            caption: "My caption"
+          },
+          {
+            path: "website5.png",
+            caption: "My caption"
           }
         ],
         githubLink: "https://github.com/etoscano/HYPE"
@@ -145,11 +185,19 @@ const data = {
         desc: `This is the Java implementation of Adrenaline, a board game by Czech Games. It's a multiplayer game and you can compete against other users. The command line interface is fully implemented while the <b>graphical user interface</b> that you can see <b>below</b> is only partially implemented.`,
         imgs: [
           {
-            path: "project_2.png",
+            path: "java0.png",
+            caption: "Java implementation of Adrenaline, a board game by Czech Games"
+          },          
+          {
+            path: "java1.png",
             caption: "My caption"
           },
           {
-            path: "project_1.png",
+            path: "java2.png",
+            caption: "My caption1"
+          },
+          {
+            path: "java3.png",
             caption: "My caption1"
           }
         ],
@@ -169,11 +217,15 @@ const data = {
         automatically saves all the annotations and restores them when the same image is opened again.`,
         imgs: [
           {
-            path: "project_2.png",
+            path: "photo0.png",
+            caption: "Java swing implementation of a photo browser with drawing functionalities"
+          },
+          {
+            path: "photo1.png",
             caption: "My caption"
           },
           {
-            path: "project_1.png",
+            path: "photo2.png",
             caption: "My caption1"
           }
         ],
@@ -205,7 +257,11 @@ const data = {
             design process.</b>`,
             imgs: [
               {
-                path: "project_2.png",
+                path: "CopyCat0.png",
+                caption: "Design of an innovative tool that enables fast copy-paste while preserving the relationships between objects"
+              },              
+              {
+                path: "CopyCat1.png",
                 caption: "My caption"
               },
               {
@@ -228,11 +284,15 @@ const data = {
                         If you are interest, you can read the documentation <a href="/documents/EleonoraToscano-RemoteMeetingBot.pdf"><b class="orange">here</b></a>.`,
         imgs: [
           {
-            path: "project_2.png",
+            path: "Bot0.png",
+            caption: "Design and prototype of a bot aimed at promoting engagement in remote meeting"
+          },          
+          {
+            path: "Bot1.png",
             caption: "My caption"
           },
           {
-            path: "project_1.png",
+            path: "Bot2.png",
             caption: "My caption1"
           }
         ],
@@ -253,11 +313,15 @@ const data = {
         </p>`,
         imgs: [
           {
-            path: "project_2.png",
+            path: "UX0.png",
+            caption: "Market analysis and UX optimization of a platform for price monitoring"
+          },          
+          {
+            path: "UX1.png",
             caption: "My caption"
           },
           {
-            path: "project_1.png",
+            path: "UX2.png",
             caption: "My caption1"
           }
         ],
@@ -278,11 +342,31 @@ const data = {
         <b>Below there are the images of our prototype, implemented using Dash (Python).</b>`,
         imgs: [
           {
-            path: "project_2.png",
+            path: "dash0.png",
+            caption: "Implementation of a Dash application for board game players annotations"
+          },          
+          {
+            path: "dash1.png",
             caption: "My caption"
           },
           {
-            path: "project_1.png",
+            path: "dash2.png",
+            caption: "My caption1"
+          },
+          {
+            path: "dash3.png",
+            caption: "My caption1"
+          },
+          {
+            path: "dash4.png",
+            caption: "My caption1"
+          },
+          {
+            path: "dash5.png",
+            caption: "My caption1"
+          },
+          {
+            path: "dash6.png",
             caption: "My caption1"
           }
         ],
@@ -300,11 +384,19 @@ const data = {
         To present our work we have created the website that you can see.</p>`,
         imgs: [
           {
-            path: "project_2.png",
+            path: "matty0.png",
+            caption: "HTML and CSS implementation of a website from Figma concept"
+          },          
+          {
+            path: "matty1.png",
             caption: "My caption"
           },
           {
-            path: "project_1.png",
+            path: "matty2.png",
+            caption: "My caption1"
+          },
+          {
+            path: "matty3.png",
             caption: "My caption1"
           }
         ],

@@ -52,6 +52,7 @@ function Project({id}){
               } }>
                 
             {[...project.imgs].map((img, index) => (
+              index > 0 &&
                 <SplideSlide key={index}>
                     <figure className='project__fig'>
                       <img className='project__img' src={`${imgsPath}${img.path}`} alt=""/>
