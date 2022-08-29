@@ -3,6 +3,24 @@ const data = {
   projects: {
     list: [
       {
+        title: "Automated Accessibility Testing Tool",
+        date: 2021,
+        tech: ["JavaScript", "Selenium", "Electron"],
+        path: "accessibility-testing",
+        summary: ``,
+        desc: ``,
+        imgs: [
+          {
+            path: "a11ytest0.png",
+            caption: ""
+          },
+          {
+            path: "a11ytest1.png",
+            caption: "My caption1"
+          }
+        ],
+      },   
+      {
         title: "Conversational Interfaces for Smart Home",
         date: 2021,
         tech: ["Robot Operation System", "Amazon Web Services", "Linux"],
@@ -15,7 +33,7 @@ const data = {
             caption: ""
           },
           {
-            path: "project_1.png",
+            path: "conversational1.png",
             caption: "My caption1"
           }
         ],
@@ -128,11 +146,11 @@ const data = {
         </ul>`,
         imgs: [
           {
-            path: "project_0.png",
+            path: "Magic0.png",
             caption: "Augmented Reality application to enhance the experience of trading Magic: The Gathering cards"
           },          
           {
-            path: "project_3.png",
+            path: "Magic1.png",
             caption: "My caption"
           },
           {
@@ -203,34 +221,34 @@ const data = {
         ],
         githubLink: "https://github.com/etoscano/ing-sw-2019-29"
       },         
-      {
-        title: "Java Photo Browser",
-        date: 2020,
-        tech: ["Java", "Swing"],
-        path: "java-photo-browser",
-        summary: `Java swing implementation of a <strong>photo browser with drawing functionalities</strong>`,
-        desc: `Java implementation of a component that displays a photo and that lets the user add annotations (text or
-        pen) to images.
-        <br>
-        <br>
-        The user can move annotations and edit them (e.g. change color, size and font). The application
-        automatically saves all the annotations and restores them when the same image is opened again.`,
-        imgs: [
-          {
-            path: "photo0.png",
-            caption: "Java swing implementation of a photo browser with drawing functionalities"
-          },
-          {
-            path: "photo1.png",
-            caption: "My caption"
-          },
-          {
-            path: "photo2.png",
-            caption: "My caption1"
-          }
-        ],
-        githubLink: "https://github.com/etoscano/AnnotationsOnImage"
-      },         
+      // {
+      //   title: "Java Photo Browser",
+      //   date: 2020,
+      //   tech: ["Java", "Swing"],
+      //   path: "java-photo-browser",
+      //   summary: `Java swing implementation of a <strong>photo browser with drawing functionalities</strong>`,
+      //   desc: `Java implementation of a component that displays a photo and that lets the user add annotations (text or
+      //   pen) to images.
+      //   <br>
+      //   <br>
+      //   The user can move annotations and edit them (e.g. change color, size and font). The application
+      //   automatically saves all the annotations and restores them when the same image is opened again.`,
+      //   imgs: [
+      //     {
+      //       path: "photo0.png",
+      //       caption: "Java swing implementation of a photo browser with drawing functionalities"
+      //     },
+      //     {
+      //       path: "photo1.png",
+      //       caption: "My caption"
+      //     },
+      //     {
+      //       path: "photo2.png",
+      //       caption: "My caption1"
+      //     }
+      //   ],
+      //   githubLink: "https://github.com/etoscano/AnnotationsOnImage"
+      // },         
       {
         title: "Copy Cat: design of an innovative tool",
         date: 2021,
@@ -296,7 +314,7 @@ const data = {
             caption: "My caption1"
           }
         ],
-        githubLink: "https://github.com/bruhnth17/zoom-bot-prototype"
+        youtubeLink: "https://www.youtube.com/watch?v=2Q-fjtav5Ps"
       },          
       {
         title: "User Experience Excellence",
@@ -313,15 +331,15 @@ const data = {
         </p>`,
         imgs: [
           {
-            path: "UX0.png",
+            path: "UXE0.png",
             caption: "Market analysis and UX optimization of a platform for price monitoring"
           },          
           {
-            path: "UX1.png",
+            path: "UXE1.png",
             caption: "My caption"
           },
           {
-            path: "UX2.png",
+            path: "UXE2.png",
             caption: "My caption1"
           }
         ],
