@@ -20,6 +20,7 @@
 .project__githubLink{
     display: flex;
     align-items: center;
+    padding-top: 8px;
 
       &:hover .project__socialIcon {
         filter: invert(100%);

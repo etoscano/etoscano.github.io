@@ -170,11 +170,11 @@ const data = {
           },          
           {
             path: "Magic1.jpeg",
-            caption: "My caption"
+            caption: "App development in Unity"
           },
           {
-            path: "project_1.png",
-            caption: "My caption1"
+            path: "Magic2.png",
+            caption: "Functionalities: scan for information, manage user collection and add to collection"
           }
         ],
       }, 
@@ -192,23 +192,11 @@ const data = {
           },          
           {
             path: "website1.png",
-            caption: "My caption"
-          },
-          {
-            path: "website2.png",
-            caption: "My caption"
+            caption: "Interactive dialogue model (IDM) for the dynamic website"
           },
           {
             path: "website3.png",
-            caption: "My caption"
-          },
-          {
-            path: "website4.png",
-            caption: "My caption"
-          },
-          {
-            path: "website5.png",
-            caption: "My caption"
+            caption: "A page with group links, structural links and transition links as per IDM"
           }
         ],
         githubLink: "https://github.com/etoscano/HYPE"
@@ -219,23 +207,15 @@ const data = {
         tech: ["Java", "Multiplayer", "Client/Server"],
         path: "java-game",
         summary: `<strong>Java implementation</strong> of Adrenaline, a <strong>board game</strong> by Czech Games`,
-        desc: `This is the Java implementation of Adrenaline, a board game by Czech Games. It's a multiplayer game and you can compete against other users. The command line interface is fully implemented while the <b>graphical user interface</b> that you can see <b>below</b> is only partially implemented.`,
+        desc: `<b>Java implementation</b> of Adrenaline, a <b>board game</b> by Czech Games. It's a multiplayer game and you can compete against other users. The <b>command line interface</b> is fully implemented while the <b>graphical user interface</b> is partially implemented. It uses <b>Swing</b>, a GUI widget toolkit for Java.`,
         imgs: [
           {
             path: "java0.png",
             caption: "Java implementation of Adrenaline, a board game by Czech Games"
-          },          
+          },   
           {
-            path: "java1.png",
-            caption: "My caption"
-          },
-          {
-            path: "java2.png",
-            caption: "My caption1"
-          },
-          {
-            path: "java3.png",
-            caption: "My caption1"
+            path: "java2.jpg",
+            caption: "Adrenaline's graphical user interface"
           }
         ],
         githubLink: "https://github.com/etoscano/ing-sw-2019-29"
@@ -274,24 +254,12 @@ const data = {
         tech: ["Figma", "Design Principles"],
         path: "copy-cat",
         summary: `<strong>Design of an innovative tool</strong> that enables fast copy-paste while preserving the relationships between objects`,
-        desc: `<h6>Design Principles:</h6>
-        <ul>
-            <li>Reification</li>
-            <li>Polymorphism</li>
-            <li>Reuse</li>
-            <li>Substrates</li>
-            <li>Discovery</li>
-            <li>Appropriability</li>
-            <li>Expressivity</li>
-        </ul>
+        desc: `        
+        Prototype of Copy Cat, an innovative tool that enables fast copy-paste while preserving the relationships between objects.
         <br>
         <br>
-        <h5>Description of the project</h5>
-        Here is the first prototype for Copy Cat, an innovative tool that enables fast copy-paste while
-        preserving the relationships between objects.
-        <br>
-        <b class="orange">We have used some design principles, such as reification and reuse, to improve the
-            design process.</b>`,
+        <b>Design Principles</b>: Reification | Polymorphism | Reuse | Substrates | Discovery | Appropriability | Expressivity
+        `,
             imgs: [
               {
                 path: "CopyCat0.png",
@@ -299,11 +267,11 @@ const data = {
               },              
               {
                 path: "CopyCat1.png",
-                caption: "My caption"
+                caption: "First method: elements are distributed equally along the line"
               },
               {
-                path: "project_1.png",
-                caption: "My caption1"
+                path: "CopyCat2.png",
+                caption: "Second method: additional elements are added to the fixed-gap path"
               }
             ],
       },          
@@ -313,12 +281,10 @@ const data = {
         tech: ["Prototype", "NodeJS", "Design Thinking"],
         path: "remote-meeting-bot",
         summary: `<strong>Design and prototype</strong> of a bot aimed at promoting engagement in remote meetings`,
-        desc: `Youtube: <a href="https://youtu.be/2Q-fjtav5Ps"><b class="orange"> Video scenario</b></a>
-        <br>
-        <br>
-        <h5>Description of the project</h5>
-        For this project my team and I designed and prototyped a bot aimed at promoting engagement in remote meetings. We used the Design Thinking technique for the process.
-                        If you are interest, you can read the documentation <a href="/documents/EleonoraToscano-RemoteMeetingBot.pdf"><b class="orange">here</b></a>.`,
+        desc: `For this project my team and I designed and prototyped a bot aimed at promoting engagement in remote meetings. 
+        We used the <b>Design Thinking</b> technique for the process. The bot prototype was implemented using <b>NodeJS</b>.
+
+        `,
         imgs: [
           {
             path: "Bot0.png",
@@ -326,11 +292,15 @@ const data = {
           },          
           {
             path: "Bot1.png",
-            caption: "My caption"
+            caption: "People in a remote meeting using this bot"
           },
           {
             path: "Bot2.png",
-            caption: "My caption1"
+            caption: "A brainstorming session using Miro"
+          },
+          {
+            path: "Bot4.jpg",
+            caption: "The bot's functionalities"
           }
         ],
         youtubeLink: "https://www.youtube.com/watch?v=2Q-fjtav5Ps"
