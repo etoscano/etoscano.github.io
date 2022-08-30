@@ -4,7 +4,7 @@ const data = {
     list: [
       {
         title: "Automated Accessibility Testing Tool",
-        date: 2021,
+        date: 2022,
         tech: ["JavaScript", "Selenium", "Electron"],
         path: "accessibility-testing",
         summary: ``,
