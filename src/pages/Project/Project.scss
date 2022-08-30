@@ -17,10 +17,6 @@
     text-align: center;
 }
 
-.project__desc{
-    padding-bottom: 16px;
-}
-
 .project__githubLink{
     display: flex;
     align-items: center;
@@ -63,6 +59,7 @@
 }
 
 .project__desc{
+    line-height: 1.4;
 
     & strong, & b{
         font-weight: 700;
@@ -70,6 +67,23 @@
 
     & i{
         font-style: italic;
+    }
+
+    & a{
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    & ul{
+        list-style-type: circle;
+        padding-left: 16px;
+        margin-top: 8px;
+        & ul{
+            margin-top: 4px;
+        }
+    }
+    & li{
+        margin-bottom: 4px;
     }
 }
 
@@ -86,4 +100,6 @@
 .project__caption{
     text-align: center;
     padding-top: 16px;
+    max-width: 600px;
+    margin: 0 auto;
 }

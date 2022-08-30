@@ -8,7 +8,7 @@ const data = {
         tech: ["JavaScript", "Selenium", "Electron"],
         path: "accessibility-testing",
         summary: ``,
-        desc: ``,
+        desc: `<b>JavaScript development</b> of a tool to automate accessibility testing. This tool integrates <a href="https://github.com/dequelabs/axe-core">axe-core</a>, an accessibility testing engine, <a href="https://www.selenium.dev/">Selenium</a>, an open-source project for browser automation. and <a href="https://www.electronjs.org/">Electron</a>, an open-source framework designed to create desktop applications.`,
         imgs: [
           {
             path: "a11ytest0.png",
@@ -16,7 +16,12 @@ const data = {
           },
           {
             path: "a11ytest1.png",
-            caption: "My caption1"
+            caption: "The tool's interface"
+          }
+          ,
+          {
+            path: "a11ytest1.png",
+            caption: "xxxxx"
           }
         ],
       },   
@@ -26,7 +31,16 @@ const data = {
         tech: ["Robot Operation System", "Amazon Web Services", "Linux"],
         path: "conversational-interface",
         summary: ``,
-        desc: ``,
+        desc: `Development of a <b>speech-based interface for social robots</b> connected with smart space sensors and actuators, enabling robots to:
+        <ul>
+          <li>
+          engage the elderly in <b>context-aware conversations</b> related to everyday tasks or to behaviors that are consistent with indoor and outdoor environmental conditions
+          </li>
+          <li>
+          to act as a proxy for <b>domotic control</b>
+          </li>
+        </ul>
+        `,
         imgs: [
           {
             path: "conversational0.png",
@@ -34,7 +48,19 @@ const data = {
           },
           {
             path: "conversational1.png",
-            caption: "My caption1"
+            caption: "Experiemental study partecipant interacting with the speech-based interface"
+          },
+          {
+            path: "conversational2.jpeg",
+            caption: "Domus Lab at Officine Edison Milano perfectly reproduces a common domestic environment and it is used for testing IoT systems"
+          },
+          {
+            path: "conversational3.png",
+            caption: "System overview: integration of Home Assistant, an open-source home automation software, into HARMONI, a ROS-based tool for the creation of human-robot interactions"
+          },
+          {
+            path: "conversational4.png",
+            caption: "HARMONI's packages divided by category"
           }
         ],
       },     
@@ -44,31 +70,41 @@ const data = {
         tech: ["Unity", "Kinect", "Arduino"],
         path: "smart-space-games",
         summary: `Development of <strong>smart space games</strong> in Unity using projectors, a Kinect and Arduino `,
-        desc: `<strong>GEA++</strong> is a Smart Space application for children with Neurodevelopmental Disorders. It focuses on nutrition education. The three activities proposed are based on real laboratory activities that children do in a local specialized center. An image shows the configuration of the the smart room environment. The images above show some components used to build the pyramid smart object and the smart room at i3lab, where we tested the games. The interaction for the first two games is based on hand tracking while the third game relies on the pyramid smart object. My team and I have created a pyramid smart object for one of the games. Inside the smart room there were the frontal and the floor projections.`,
+        desc: `<b>Unity</b> development of a <b>smart space application focused on nutrition education</b> for children with neurodevelopmental disorders.
+        The interaction for the first two games is based on <b>hand tracking</b> while the third game relies on a custom <b>smart object</b>.
+        <br>
+        The tools and devices employed are:
+        <ul>
+          <li>
+            Kinect
+          </li>
+          <li>
+            Front and floor projectors
+          </li>
+          <li>
+            Audio system
+          </li>
+          <li>
+            Portable and fixed smart lights
+          </li>
+        </ul>
+        `,
         imgs: [
           {
             path: "GEA0.png",
             caption: "Development of smart space games in Unity using projectors, a Kinect and Arduino"
           },
           {
-            path: "GEA1.png",
-            caption: "My caption"
-          },
-          {
             path: "GEA2.png",
-            caption: "My caption"
+            caption: "Game concept for one of the games"
           },
           {
-            path: "GEA3.png",
-            caption: "My caption"
+            path: "GEA1.png",
+            caption: "My team and I have created a pyramid smart object for one of the games, using Arduino and RFID readers"
           },
           {
-            path: "GEA4.png",
-            caption: "My caption"
-          },
-          {
-            path: "GEA5.png",
-            caption: "My caption"
+            path: "GEA5.jpg",
+            caption: "The smart room at i3Lab, situated inside Politecnico di Milano, where we tested the games"
           }
         ],
       },     
@@ -78,14 +114,12 @@ const data = {
         tech: ["Unity", "Vuforia", "Firebase"],
         summary: `Unity implementation of a <strong>Mixed Reality</strong> educational tool for learning geography `,
         path: "mixed-reality",
-        desc: `This project's application ranges from being a tool for learning geography to being an engaging way for kids to learn about customs and traditions of other countries.
+        desc: `<b>Unity</b> development of a <b>Mixed Reality</b> tool for learning geography.
         <br>
-        The user uses their smartphone to interact with physical objects.
-        First the user scans the interactive city that they want to learn about, on the world map.
-        Then, the city is loaded on a cube.
+        First the user scans the interactive city that they want to learn about using a smartphone.
         The user uses a handmade paper cube as medium through which interact with the information available about the city.
-        <br/><b>Each side of the cube shows a different aspect the user may want to learn about, such as monuments, state anthems and flags.</b>
-        The online database allows other users to "see" what is loaded on a certain cube, making a <b>shared learning experience</b> possible.
+        <br/>Each side of the cube shows a different aspect the user may want to learn about, such as monuments, state anthems and flags.
+        The online database allows other users to see which ciy is loaded on a certain cube, making a <b>shared learning experience</b> possible.
         Also, placing two cubes close to each other allows the user to learn about the differences between the two countries.
         <br>
         <br> `,
@@ -95,12 +129,12 @@ const data = {
             caption: "Unity implementation of a Mixed Reality educational tool for learning geography"
           },
           {
-            path: "Map1.png",
-            caption: "My caption"
+            path: "Map1.jpg",
+            caption: "Two city maps, an handmade paper cube and the application showing a monument on the cube"
           },
           {
-            path: "Map2.png",
-            caption: "My caption1"
+            path: "Map2.jpg",
+            caption: "Paper model of the cube and its faces: national anthem, load data, monument, city, national flag and traditional food"
           }
         ],
       },      
@@ -110,47 +144,32 @@ const data = {
         tech: ["Unity", "Vuforia", "Augmented Reality", "Android"],
         path: "augmented-reality",
         summary: `<strong>Augmented Reality</strong> application to enhance the experience of trading Magic: The Gathering cards`,
-        desc: `Magic: The Rendering is an AR application tool for players of the collectible card game Magic: The
-        Gathering to enhance their user experience in different aspects related to trading.
+        desc: `Magic: The Rendering is an <b>AR application</b> tool for players of the collectible card game <i>Magic: The
+        Gathering</i> to enhance their user experience in different aspects related to trading. This app was developed in <b>Unity</b>.
         <br>
-        <br>
-
         App structure:
         <ul>
-            <li><b>Home</b>
+            <li><b>Scan for information</b>
+              <ul>
+                <li><b>Card info</b> shows price, type and set</li>
+                <li><b>Language translation</b> shows the translation of a card on top of the
+                original one</li>
+              </ul>
+            </li>
+            <li><b>Manage user collection</b> lists all the cards the user has in their collection and the number of copies                        
                 <ul>
-                    <li><b>Scan for information</b></li>
-                    <ul>
-                        <li><b>Card info shows</b></li>
-                        <ul>
-                            <li>Price</li>
-                            <li>Type</li>
-                            <li>Set</li>
-                        </ul>
-                        <li><b>Language translation</b></li>
-                        When activated, the app will show an overlay a translated version card on top of the
-                        original one
-                    </ul>
-                    <br>
-                    <li><b>Manage user collection</b>
-                        <br>
-                        List all the cards the user has in their collection as well as how many copies they have
-                        <ul>
-                            <li><b>Add to collection</b></li>
-                            This functionality lets the user scan cards to add them to their collection showing
-                            how many copies of each card they have.
-                        </ul>
-                    </li>
+                    <li><b>Add to collection</b> lets the user scan cards to add them to their collection</li>
                 </ul>
             </li>
-        </ul>`,
+        </ul>
+        `,
         imgs: [
           {
             path: "Magic0.png",
             caption: "Augmented Reality application to enhance the experience of trading Magic: The Gathering cards"
           },          
           {
-            path: "Magic1.png",
+            path: "Magic1.jpeg",
             caption: "My caption"
           },
           {
