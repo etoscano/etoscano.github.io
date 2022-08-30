@@ -311,12 +311,10 @@ const data = {
         tech: ["User Experience", "Market Analysis"],
         path: "user-experience-excellence",
         summary: `<strong>Market analysis</strong> and <strong>UX optimization</strong> of a platform for price monitoring`,
-        desc: `<h5>Description of the project</h5>
-        Market analysis for a price monitoring platform and proposal of various UX optimizations for COGUARD's platform.
+        desc: `<strong>Market analysis</strong> for a price monitoring platform and proposal of various <strong>UX optimization</strong> for COGUARD's platform.
 
         <br>
-        <br>
-        <p>Given the sensitive content of the report me and my team have composed, I will only show the topics of said report and the timeline that we have followed.
+        <p>Given the sensitive content of the report my team and I have composed, I will only show an overview.
         </p>`,
         imgs: [
           {
@@ -325,11 +323,11 @@ const data = {
           },          
           {
             path: "UXE1.png",
-            caption: "My caption"
+            caption: "A mockup of the platform UX optimization and the index of the report"
           },
           {
             path: "UXE2.png",
-            caption: "My caption1"
+            caption: "The timeline we followed and a mockup of the platform UX optimization"
           }
         ],
       },            
@@ -339,14 +337,10 @@ const data = {
         tech: ["Dash", "Python", "Bootstrap"],
         path: "dash-python-application",
         summary: `Implementation of a <strong>Dash application</strong> for board game players annotations`,
-        desc: `<h5>Description of the project</h5>
-        This is part of a design project in which we wanted to to address the fact that casual and regular board game players need help finding games and people to play them with.
+        desc: `Design and implementation of<b> a platform to share board games</b>
+        We wanted to to address the fact that casual and regular board game players need help finding games and people to play them with.
         <br>
-        Part of our solution was the design and implementation of<b> a platform to share board games</b>
-
-        <br>
-        <br>
-        <b>Below there are the images of our prototype, implemented using Dash (Python).</b>`,
+        Our prototype was implemented using <b>Dash</b> (Python).`,
         imgs: [
           {
             path: "dash0.png",
@@ -354,27 +348,11 @@ const data = {
           },          
           {
             path: "dash1.png",
-            caption: "My caption"
+            caption: "App interface"
           },
           {
             path: "dash2.png",
-            caption: "My caption1"
-          },
-          {
-            path: "dash3.png",
-            caption: "My caption1"
-          },
-          {
-            path: "dash4.png",
-            caption: "My caption1"
-          },
-          {
-            path: "dash5.png",
-            caption: "My caption1"
-          },
-          {
-            path: "dash6.png",
-            caption: "My caption1"
+            caption: "Brainstorming session with the team"
           }
         ],
         githubLink: "https://github.com/mariacamilarg/board_games"
@@ -385,10 +363,8 @@ const data = {
         tech: ["HTML/CSS", "Figma"],
         path: "website-design-and-implementation",
         summary: `HTML and CSS implementation of a website from <strong>Figma</strong> concept`,
-        desc: `<p>For the course Interaction Design Studio 2019-2020 at Politecnico di Milano, our team had to develop an
-        innovative idea. We have designed and prototyped Matty, an interactive yoga mat that can reduce stress
-        in ASD children.
-        To present our work we have created the website that you can see.</p>`,
+        desc: `<b>Design and prototype</b> of Matty, an interactive yoga mat that can reduce stress in ASD children.
+        In addition to the object's design, to present our work we have created a website.`,
         imgs: [
           {
             path: "matty0.png",
@@ -396,15 +372,15 @@ const data = {
           },          
           {
             path: "matty1.png",
-            caption: "My caption"
+            caption: "Website design on Figma"
           },
           {
             path: "matty2.png",
-            caption: "My caption1"
+            caption: "Website implementation with HTML/CSS"
           },
           {
             path: "matty3.png",
-            caption: "My caption1"
+            caption: "Design of Matty, an interactive yoga mat"
           }
         ],
         githubLink: "https://github.com/etoscano/IDS"
