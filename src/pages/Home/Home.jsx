@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Row from '../../modules/Row/Row.jsx';
 import Column from '../../modules/Column/Column.jsx';
-import Experience from '../../modules/Experience/Experience.jsx';
+// import Experience from '../../modules/Experience/Experience.jsx';
 import Featured from '../../modules/Featured/Featured.jsx';
 import Phone from '../../modules/Phone/Phone.jsx';
 
