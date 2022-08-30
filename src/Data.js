@@ -103,7 +103,7 @@ const data = {
             caption: "My team and I have created a pyramid smart object for one of the games, using Arduino and RFID readers"
           },
           {
-            path: "GEA5.jpg",
+            path: "GEA5.jpeg",
             caption: "The smart room at i3Lab, situated inside Politecnico di Milano, where we tested the games"
           }
         ],
@@ -129,11 +129,11 @@ const data = {
             caption: "Unity implementation of a Mixed Reality educational tool for learning geography"
           },
           {
-            path: "Map1.jpg",
+            path: "Map1.jpeg",
             caption: "Two city maps, an handmade paper cube and the application showing a monument on the cube"
           },
           {
-            path: "Map2.jpg",
+            path: "Map2.jpeg",
             caption: "Paper model of the cube and its faces: national anthem, load data, monument, city, national flag and traditional food"
           }
         ],
@@ -214,7 +214,7 @@ const data = {
             caption: "Java implementation of Adrenaline, a board game by Czech Games"
           },   
           {
-            path: "java2.jpg",
+            path: "java2.jpeg",
             caption: "Adrenaline's graphical user interface"
           }
         ],
@@ -299,7 +299,7 @@ const data = {
             caption: "A brainstorming session using Miro"
           },
           {
-            path: "Bot4.jpg",
+            path: "Bot4.jpeg",
             caption: "The bot's functionalities"
           }
         ],
