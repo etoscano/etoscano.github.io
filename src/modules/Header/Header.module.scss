@@ -9,11 +9,26 @@
   z-index: 1;
 }
 
+.header__wrapper{
+
+  @include bp($xs){
+    display: flex;
+    align-items: center;
+  }
+}
 
 .header__logoLink{
+  flex-basis: 0;
+  flex-grow: 3;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  padding: 10px 0;
+
+  @include bp($xs){
+    justify-content: flex-start;
+    padding: 0;
+  }
 
   &:hover .header__logo{
     -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
@@ -83,11 +98,27 @@
 }
 
 
+.header__nav{
+  flex-basis: 0;
+  flex-grow: 7;
+  display: flex;
+  justify-content: center;
+  @include bp($xs){
+    display: block;
+  }
+}
+
 .header__list{
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   position: relative;
+  justify-content: center;
+  padding: 10px 0;
+  
+  @include bp($xs){
+    justify-content: flex-end;
+    padding: 0;
+  }
 
   &:after {
     // &:not(:last-child):after {
@@ -120,8 +151,12 @@
 }
 
 .header__row{
-  height: 104px;
+  min-height: $header-height-mob;
   align-items: center;
+
+  @include bp($xs){
+    min-height: $header-height;
+  }
 }
 
 .header__link{
@@ -130,8 +165,13 @@
   font-weight: 600;
   font-size: rem(16px);
   line-height: rem(42px);
+  padding: 4px 12px;
 
-  padding: 16px 48px;
+  @include bp($xs){
+    padding: 16px 48px;
+  }
+
+
   width: 100%;
 
   &--active:after {

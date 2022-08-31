@@ -2,6 +2,13 @@
 
 
 .home__main{
+    max-width: $max-width;
+    margin: 0 auto;
+
+    padding: $padding-mobile;
+    @include bp($xs){
+        padding: 0;
+    }
 }
 
 .home__title, .home__title2{
@@ -73,7 +80,11 @@
 }
 
 .home__section1{
-    display: flex;
+
+    @include bp($xs){
+        display: flex;
+    }
+
 }
 
 .home__phoneWrapper{
@@ -86,13 +97,17 @@
 .home__textWrapper{
     flex-basis: 0;
     flex-grow: 1;
-    padding-top: 104px; // header
+    padding-top: $header-height-mob; // header
     padding-bottom: 96px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
+    @include bp($xs){
+        padding-top: $header-height;
+    }
 }
 .home__section2{
     padding: 40px;

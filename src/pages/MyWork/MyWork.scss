@@ -1,16 +1,19 @@
 
 
 .mywork__main{
-    padding-top: 104px; // header
+    padding-top: $header-height-mob; // header
     // padding-bottom: 32px;
     min-height: 100vh;
+    max-width: $max-width;
+    margin: 0 auto;
+
+    @include bp($xs){
+        padding-top: $header-height;
+    }
 }
 
 .mywork__wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .mywork__title{
@@ -28,7 +31,11 @@
 .mywork__project{
     display: flex;
     flex-direction: column;
-    padding-bottom: 96px;
+    padding-bottom: 32px;
+
+    @include bp($xs){
+        padding-bottom: 96px;
+    }
 
     &:hover{
         .mywork__img{
@@ -38,8 +45,11 @@
 }
 
 .mywork__container{
-    border: 2px solid $color-black;
-    padding: 16px;
+
+    @include bp($xs){
+        border: 2px solid $color-black;
+        padding: 16px;
+    }
 }
 
 // .mywork__innerContainer{
@@ -48,43 +58,72 @@
 
 .mywork__projectTitle{
     background-color: #4E5E57;
-    padding-left: 32px;
     text-align: left;
     width: 100%;
     color: $color-white;
     font-family: $font;
     font-style: normal;
     font-weight: 700;
-    font-size: rem(22px);
-    line-height: rem(48px);
+    font-size: rem(20px);
+    line-height: rem(28px);
+
+    padding: 10px 40px 10px 10px;
+
+    @include bp($xs){
+        padding-left: 32px;
+        font-size: rem(22px);
+        line-height: rem(48px);
+    }
 }
 
 .mywork__img{
-    min-height: 100px;
-    // filter: grayscale(0.8);
-    transition: 0.3s;
+    // min-height: 100px;
+    // // filter: grayscale(0.8);
+    // transition: 0.3s;
+    width: 100%;
+    display: block;
 }
 
 .mywork__year{
+    // border-bottom: 1px solid black;
+
+    // @include bp($xs){
+    //     border: none;
+    // }
 
 }
 
 .mywork__info{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
+    margin-top: 8px;
+    padding: 0 12px;
+
+    @include bp($xs){
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 16px;
+    }
 }
 
 .mywork__techs{
-    display: flex;
+    padding: 8px 0 16px;
+    border-bottom: 1px solid $color-black;
+
+    @include bp($xs){
+        display: flex;
+        padding: 0;
+    }
 }
 
 
 .mywork__tech{
-    padding: 0 12px;
-    border-right: 2px solid $color-black;
-    &:last-child{
-        border-right: none;
+
+    @include bp($xs){
+        padding: 0 12px;
+        border-right: 2px solid $color-black;
+        &:last-child{
+            border-right: none;
+        }
     }
 }
 
