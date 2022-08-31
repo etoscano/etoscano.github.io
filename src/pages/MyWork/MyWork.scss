@@ -106,12 +106,13 @@
 }
 
 .mywork__techs{
-    padding: 8px 0 16px;
+    padding: 8px 0 16px 0;
     border-bottom: 1px solid $color-black;
 
     @include bp($xs){
         display: flex;
         padding: 0;
+        border: none;
     }
 }
 

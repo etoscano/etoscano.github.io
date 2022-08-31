@@ -1,21 +1,34 @@
 
 .footer{
     // height: 700px;
-    height: 560px;
+
     position: relative;
+    padding: 0 10px;
+
+    @include bp($xs){
+      padding: 0;
+      height: 560px;
+    }
 }
 
 .footer__logoLink{
-    height: 113px;
+    height: 60px;
 
     &:hover .footer__logo{
         -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
         animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
       }
+      @include bp($xs){
+        height: 113px;
+    }
 }
 .footer__logo{
+  width: 60px;
+  max-width: 60px;
+  @include bp($xs){
     width: 113px;
     max-width: 113px;
+  }
 }
   
   
@@ -46,13 +59,19 @@
     height: 54px;
     border-bottom: 2px solid $color-black;
     border-left: 2px solid $color-black;
-    margin-left: 56px;
+    margin-left: 30px;
     position: relative;
+    @include bp($xs){
+      margin-left: 56px;
+    }
 }
 
-.footer__wrapper{
+.footer__leftWrapper{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    @include bp($xs){
+      align-items: center;
+    }
 }
 
 .footer__textWrapper{
@@ -68,10 +87,13 @@
     font-size: rem(18px);
     line-height: rem(24px);
     color: $color-black;
-    padding: 16px 0;
+
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
+    @include bp($xs){
+      padding: 16px 0;
+    }
 }
 
 .footer__outerLink{
@@ -169,7 +191,11 @@
 }
 
 .footer__paragraph{
-    max-width: 50ch;
+  display: none;
+    @include bp($xs){
+      display: block;
+      max-width: 50ch;
+    }
 }
 
 .footer__socialIcon{
@@ -203,14 +229,43 @@
 }
 
 .footer__bottomParagraph{
-    position: absolute;
-    padding: 8px;
-    bottom: 0;
-    right: 0;
-    text-align: right;
+    position: relative;
+    text-align: center;
     padding-right: 16px;
     font-size: rem(16px);
     color: $color-black;
+    margin: 10px 0;
     // -webkit-box-shadow: inset 0px 0px 5px 20px $color-asphalt-gray; 
     // box-shadow: inset 0px 0px 5px 20px $color-asphalt-gray;
+
+
+    @include bp($xs){
+      position: absolute;
+      padding: 8px;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+      margin: 0;
+    }
+}
+
+.footer__wrapper{
+  @include bp($xs){
+    display: flex;
+  }
+
+}
+
+.footer__left{
+  flex-basis: 0;
+  flex-grow: 7;
+}
+.footer__right{
+  flex-basis: 0;
+  flex-grow: 3;
+
+  margin: 24px 0 16px;
+  @include bp($xs){
+    margin: 0;
+  }
 }

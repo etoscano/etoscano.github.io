@@ -22,9 +22,10 @@ return (
       <Row extraClass={"footer__row"}>
         <Column size={1}  ></Column>
         
-        <Column size={7}  >
+        <Column size={10} extraClass={"footer__wrapper"} >
 
-           <div className='footer__wrapper'>
+        <div className="footer__left">
+           <div className='footer__leftWrapper'>
                 <Link className={`footer__logoLink `}  to="/" onClick={() => setPage('home')} aria-label={"Go to homepage"}>
                     <img className="footer__logo" src="/ET.svg" alt="Eleonora Toscano logo"></img>
                 </Link>
@@ -57,28 +58,27 @@ return (
                 </li>               
             </ul>        
           </nav>
+        </div>
 
-        </Column>
-        
-        <Column size={3}  >
-        
-        <h2 className='footer__innerNavTitle'>Browse</h2>
-        <nav className="footer__nav">
-            <ul className="footer__list">     
-                <li className={`footer__item `}>
-                <Link className={`footer__link `}  to="/" onClick={() => setPage('home')} >Home</Link>
-                </li>            
-                <li className={`footer__item `}>
-                <Link className={`footer__link `} to="/my-work" onClick={() => setPage('my-work')}> My Work </Link>
-                </li>
-                <li className={`footer__item `}>
-                <Link className={`footer__link `} to="/about" onClick={() => setPage('about')}> About </Link>
-                </li>     
-                <li className={`footer__item `}>
-                <Link className={`footer__link `} to="/contact" onClick={() => setPage('contact')}> Contact </Link>
-                </li>           
-            </ul>        
-        </nav>
+        <div className="footer__right">
+          <h2 className='footer__innerNavTitle'>Browse</h2>
+          <nav className="footer__nav">
+              <ul className="footer__list">     
+                  <li className={`footer__item `}>
+                  <Link className={`footer__link `}  to="/" onClick={() => setPage('home')} >Home</Link>
+                  </li>            
+                  <li className={`footer__item `}>
+                  <Link className={`footer__link `} to="/my-work" onClick={() => setPage('my-work')}> My Work </Link>
+                  </li>
+                  <li className={`footer__item `}>
+                  <Link className={`footer__link `} to="/about" onClick={() => setPage('about')}> About </Link>
+                  </li>     
+                  <li className={`footer__item `}>
+                  <Link className={`footer__link `} to="/contact" onClick={() => setPage('contact')}> Contact </Link>
+                  </li>           
+              </ul>        
+          </nav>
+        </div>
 
         </Column>
         <Column size={1}  ></Column>
