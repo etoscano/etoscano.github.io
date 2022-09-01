@@ -38,6 +38,13 @@ function Project({id}){
             </a>
             }
 
+            {project.youtubeLink && 
+            <a className={`project__youtubeLink  `} href={`${project.youtubeLink}`} >
+            <img className="project__socialIcon" src="/icon-youtube.svg" alt=""></img> 
+              <span className='project__linkText'><strong>{project.title}</strong> on Youtube</span>
+            </a>
+            }
+
             <Splide aria-label="My Favorite Images" className='project__slider'
             options={ {
                 // type   : 'loop',

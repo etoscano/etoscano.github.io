@@ -22,7 +22,8 @@
     text-align: center;
 }
 
-.project__githubLink{
+.project__githubLink,
+.project__youtubeLink{
     display: flex;
     align-items: center;
     padding-top: 8px;
@@ -35,6 +36,10 @@
         transform-origin: left;
         transform: scaleX(1);
       }
+}
+
+.project__socialIcon{
+    width: 32px;
 }
 
 .project__linkText{
