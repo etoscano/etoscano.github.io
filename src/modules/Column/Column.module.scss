@@ -113,7 +113,7 @@
 
 .col, .col-1, .col-2,  .col-3,  .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{ 
 
-    @include bpmax($m) {
+    @include bpmax($xs) {
         width: 100%;
     }
 
@@ -134,7 +134,7 @@
         top: 0;
         left: 0;
         height: 100vh;
-        @include bpmax($m) {
+        @include bpmax($xs) {
             position: relative;
         }
     }
@@ -146,7 +146,7 @@
     &--paddingLR{
         padding-left: $padding-large;
         padding-right: $padding-large;
-        @include bpmax($m) {
+        @include bpmax($xs) {
             padding-left: $padding-small;
             padding-right: $padding-small;
         }
@@ -162,7 +162,7 @@
     &--paddingBottom{
         padding-bottom: 96px;
 
-        @include bpmax($m) {
+        @include bpmax($xs) {
             padding-bottom: 0;
         }
     }

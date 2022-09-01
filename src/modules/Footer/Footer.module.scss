@@ -208,8 +208,12 @@
     font-family: $font;
     font-style: normal;
     font-weight: 700;
-    font-size: rem(22px);
+    font-size: rem(18px);
     line-height: rem(24px);
+    text-align: center;
+    @include bp($xs){
+      font-size: rem(22px);
+    }
 }
 
 .footer__quoteContainer{
@@ -222,9 +226,12 @@
 
 .footer__arrow{
     width: 40px;
-    margin: 0 16px;
+
     &:nth-of-type(1){
         transform: rotate(180deg);
+    }
+    @include bp($xs){
+      margin: 0 16px;
     }
 }
 

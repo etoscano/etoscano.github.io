@@ -56,7 +56,7 @@ function Contact() {
 
      <main className='contact__main'>
 
-     <div className="contact__bg" style={{ backgroundImage: "url(/contact.png)" }} alt="">
+     <div className="contact__bg" style={{  }} alt="">
 
 
         <Row extraClass="contact__row">

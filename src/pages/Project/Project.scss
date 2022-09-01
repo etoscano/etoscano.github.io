@@ -1,9 +1,14 @@
 
 
 .project__main{
-    padding-top: $header-height; // header
     padding-bottom: 32px;
     min-height: 100vh;
+    padding: $padding-mobile;
+    padding-top: $header-height-mob; // header
+    @include bp($xs){
+        padding: 0;
+        padding-top: $header-height;
+    }
 }
 
 .project__title{
@@ -90,7 +95,10 @@
 
 
 .project__fig{
-    padding: 0 16px;
+    @include bp($xs){
+        padding: 0 16px;
+    }
+    
 }
 
 .project__img{

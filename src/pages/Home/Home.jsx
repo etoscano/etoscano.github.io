@@ -24,8 +24,7 @@ function Home() {
               <div className='home__section1'>
                 <div className='home__textWrapper'>
 
-                  <h1 className='home__title'>I build amazing websites focused on experience</h1>
-                  <p className='home__paragraph'>Hello! I'm Eleonora Toscano.</p>
+                  <h1 className='home__title'>Hello! <br></br>I'm Eleonora Toscano.</h1>
                   <p className='home__paragraph'>I'm a <b>developer</b> and <b>interaction designer</b> specialized in user experience.</p>
 
                   <Link className='home__link' to="/contact"> Contact me

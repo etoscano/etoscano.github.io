@@ -48,21 +48,33 @@
 
 .contact__outerNav{
     margin-bottom: 16px;
+    display: none;
+    @include bp($xs){
+        display: block;
+    }
 }
 
 .contact__wrapper{
     background-color: $color-white;
     margin-bottom: 16px;
-    margin-top: 120px; // + header
+    margin-top: $header-height-mob + 16px; // + header
+
+    @include bp($xs){
+        margin-top: $header-height + 16px;
+    }
 }
 .contact__innerWrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    padding: 24px 48px;
-    border: 2px solid $color-black;
-    margin: 24px;
+    padding: 0 10px;
+
+    @include bp($xs){
+        padding: 24px 48px;
+        border: 2px solid $color-black;
+        margin: 24px;
+    }
 }
 
 
@@ -152,23 +164,20 @@
 }
 
 .contact__bg{
-    // position: relative;
-    // top: -$header-height;
-    z-index: -2;
-    // height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: none;
 
-    /* The image used */
-    //   background-image: url("/public/contact.png");
-    /* Set a specific height */
-    min-height: 100vh;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include bp($xs){
+        background-image: url("../../../public/contact.png");
+        z-index: -2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .contact__titleWrapper{

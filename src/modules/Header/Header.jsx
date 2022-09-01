@@ -12,7 +12,7 @@ function Header({page}) {
     <>
       <header className="header">
         <Row extraClass={"header__row"}>
-          <Column size={1}  ></Column>
+          <Column size={1}  extraClass="header__side"></Column>
           
           <Column size={10} extraClass={"header__wrapper"} >
   
@@ -39,7 +39,7 @@ function Header({page}) {
             </nav>
   
           </Column>
-          <Column size={1}  ></Column>
+          <Column size={1}  extraClass="header__side" ></Column>
         </Row>
       </header>
     </>

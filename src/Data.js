@@ -20,8 +20,8 @@ const data = {
           }
           ,
           {
-            path: "a11ytest1.png",
-            caption: "xxxxx"
+            path: "a11ytest2.png",
+            caption: "The tool running automated accessibility tests on a website"
           }
         ],
       },   

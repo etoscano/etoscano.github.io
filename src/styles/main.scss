@@ -71,11 +71,18 @@ body{
 
 // Splide
 .splide{
-    padding: 1.5em 3em 3em;
+    padding: 1em 0 3em;
+    @include bp($xs){
+        padding: 1.5em 3em 3em;
+    }
 }
 
 $captionHeight: 30px;
 
 .splide__arrow{
-    transform: translateY(calc(-50% - #{$captionHeight}));
+    display: none;
+    @include bp($xs){
+        display: block;
+        transform: translateY(calc(-50% - #{$captionHeight}));
+    }
 }
