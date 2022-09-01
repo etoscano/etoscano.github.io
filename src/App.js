@@ -12,10 +12,13 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import data from "./Data";
 
+import ScrollToTop from "./utils/ScrollToTop";
+
 function App() {
   
   return (
     <Router>
+      <ScrollToTop />
       <AnimatedRoutes />
     </Router>
   );
